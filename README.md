@@ -6,7 +6,7 @@ Read the full story: [Phasing Out pfSense: Building a Smarter Multi-WAN Failover
 
 ## What This Does
 
-RouterOS's native `check-gateway=ping` failover is primitive—it pings a single IP and calls it a day. This script implements a **Smart Jury** system that:
+RouterOS's native `check-gateway=ping` failover is primitive. It pings a single IP and calls it a day. This script implements a **Smart Jury** system that:
 
 - Monitors **56 targets** (28 IPv4 + 28 IPv6) across four reliability cohorts
 - Weighs each cohort differently (Priority 2.0x, Anycast 1.5x, Regional 1.2x, ISP 0.8x)
