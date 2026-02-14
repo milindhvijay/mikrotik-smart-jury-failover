@@ -2,7 +2,7 @@
 
 A Python-based multi-WAN failover monitor for MikroTik RouterOS with weighted cohort scoring, noisy target quarantine, and smart recheck logic.
 
-Read the full story: [Phasing Out pfSense: Building a Smarter Multi-WAN Failover for MikroTik](https://blog.milindhvijay.com/posts/mikrotik-multi-wan-failover/)
+Read the full story: <a href="https://blog.milindhvijay.com/posts/mikrotik-multi-wan-failover/" target="_blank">Phasing Out pfSense: Building a Smarter Multi-WAN Failover for MikroTik</a>
 
 ## What This Does
 
