@@ -15,37 +15,6 @@ RouterOS's native `check-gateway=ping` failover is primitive—it pings a single
 - Uses hysteresis: instant failover but 2 consecutive healthy cycles + 30s hold-down for recovery
 - Controls MikroTik routing distance directly via RouterOS API
 
-## Quick Start
-
-### Prerequisites
-
-- MikroTik RouterOS 7.x device
-- Python 3.8+
-- `routeros_api` library: `pip install routeros_api`
-- API user configured on your MikroTik with write access to `/ip/route` and `/ipv6/route`
-
-### Configuration
-
-Set environment variables for your router connection:
-
-```bash
-export ROUTER_HOST="192.168.88.1"
-export ROUTER_USER="api-monitor"
-export ROUTER_PASS="your-secure-password"
-```
-
-Or create a `.env` file and use `python-dotenv`.
-
-### Running
-
-```bash
-# For BSNL/AS9829 connection
-python3 monitor_bsnl_noflush_clean_github.py
-
-# For Kerala Vision/AS138754 connection
-python3 monitor_kv_noflush_clean_github.py
-```
-
 ## How It Works
 
 1. **Monitor Loop**: Pings all targets every 2 seconds using asyncio for concurrency
