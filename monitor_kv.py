@@ -85,9 +85,11 @@ WAN_INTERFACE = "pppoe-as138754"
 
 ROUTE_COMMENT_V4 = "AS138754 Primary"
 ROUTE_COMMENT_V6 = "AS138754 v6 Primary"
+FALLBACK_COMMENT_V4 = "AS138754 Failover for AS9829"
+FALLBACK_COMMENT_V6 = "AS138754 v6 Failover for AS9829"
 
 NORMAL_DISTANCE = 1
-FAILOVER_DISTANCE = 20
+FAILOVER_DISTANCE = 3
 
 CHECK_INTERVAL = 2
 PING_COUNT = 5
@@ -355,6 +357,25 @@ async def check_all_targets(targets: List[Dict],
 
     return is_healthy, avg_loss, avg_latency, details
 
+def set_fallback_route_state(api, comment: str, enabled: bool) -> None:
+    """Enable or disable a fallback route by comment."""
+    try:
+        resource = api.get_resource('/ipv6/route' if 'v6' in comment else '/ip/route')
+        routes = resource.get(comment=comment)
+        if not routes:
+            log(f"WARNING: Fallback route '{comment}' not found")
+            return
+        route_id = routes[0]['id']
+        current_disabled = routes[0].get('disabled', 'false')
+        target_disabled = 'false' if enabled else 'true'
+        if current_disabled != target_disabled:
+            resource.set(id=route_id, disabled=target_disabled)
+            state_str = 'ENABLED' if enabled else 'DISABLED'
+            log(f"FALLBACK {state_str} [{comment}]")
+    except Exception as e:
+        log(f"API Error updating fallback {comment}: {e}")
+
+
 def update_route(api, comment: str, is_healthy: bool, metrics: Tuple[float, float],
                  recovery_start_times: dict) -> Tuple[bool, bool]:
     try:
@@ -387,12 +408,18 @@ def update_route(api, comment: str, is_healthy: bool, metrics: Tuple[float, floa
                     log(f"RECOVERY [{comment}]: Loss={loss:.1f}%, Latency={lat:.2f}ms -> Dist {target_dist}")
                     resource.set(id=route_id, distance=str(target_dist))
                     del recovery_start_times[comment]
+                    # Re-enable this ISP's fallback route in the other table
+                    fallback = FALLBACK_COMMENT_V6 if 'v6' in comment else FALLBACK_COMMENT_V4
+                    set_fallback_route_state(api, fallback, enabled=True)
                     return True, False
             else:
                 log(f"FAILOVER [{comment}]: Loss={loss:.1f}%, Latency={lat:.2f}ms -> Dist {target_dist}")
                 resource.set(id=route_id, distance=str(target_dist))
                 if comment in recovery_start_times:
                     del recovery_start_times[comment]
+                # Disable this ISP's fallback route in the other table
+                fallback = FALLBACK_COMMENT_V6 if 'v6' in comment else FALLBACK_COMMENT_V4
+                set_fallback_route_state(api, fallback, enabled=False)
                 return True, True
         else:
             if comment in recovery_start_times:
