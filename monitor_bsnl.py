@@ -17,7 +17,9 @@ if not ROUTER_PASS:
     raise ValueError("ROUTER_PASS environment variable must be set")
 
 TARGETS_V4 = [
-    {'ip': '218.248.112.1', 'latency': 15, 'name': 'DNS', 'cohort': 'isp'},
+    {'ip': '218.248.112.1', 'latency': 20, 'name': 'DNS', 'cohort': 'isp'},
+    {'ip': '218.248.112.97', 'latency': 10, 'name': 'DNS', 'cohort': 'isp'},
+    {'ip': '218.248.90.21', 'latency': 25, 'name': 'DNS', 'cohort': 'isp'},
     {'ip': '8.8.8.8', 'latency': 20, 'name': 'Google', 'cohort': 'anycast'},
     {'ip': '142.251.43.46', 'latency': 20, 'name': 'Google-Priority', 'cohort': 'priority'},
     {'ip': '1.1.1.1', 'latency': 20, 'name': 'Cloudflare', 'cohort': 'anycast'},
@@ -48,7 +50,8 @@ TARGETS_V4 = [
 ]
 
 TARGETS_V6 = [
-    {'ip': '2001:4490:3ffe:13::4', 'latency': 20, 'name': 'DNS', 'cohort': 'isp'},
+    {'ip': '2001:4490:3ffe:13::24', 'latency': 10, 'name': 'DNS', 'cohort': 'isp'},
+    {'ip': '2001:4490:efe0:600::4', 'latency': 30, 'name': 'DNS', 'cohort': 'isp'},
     {'ip': '2001:4860:4860::8888', 'latency': 20, 'name': 'Google', 'cohort': 'anycast'},
     {'ip': '2404:6800:4007:834::200e', 'latency': 20, 'name': 'Google-Priority', 'cohort': 'priority'},
     {'ip': '2606:4700:4700::1111', 'latency': 20, 'name': 'Cloudflare', 'cohort': 'anycast'},
@@ -125,7 +128,7 @@ TIMEOUT_MULTIPLIERS = {
 
 def calculate_latency_threshold(measured_ms: float, cohort: str) -> int:
     """Calculate latency threshold based on measured value and cohort rules.
-    
+
     Rules:
     - If measured < 10ms: round up to next 10
     - If cohort is 'priority' or 'anycast': round up to next 10
@@ -134,7 +137,7 @@ def calculate_latency_threshold(measured_ms: float, cohort: str) -> int:
     if measured_ms < 10:
         # Round up to next 10
         return 10
-    
+
     if cohort in ('priority', 'anycast'):
         # Round up to next 10
         return int((measured_ms // 10) + 1) * 10
@@ -234,7 +237,7 @@ async def ping_target(target_ip: str, timeout: float) -> Tuple[bool, float]:
         result = await loop.run_in_executor(
             None, lambda: _ping_subprocess(target_ip, timeout)
         )
-        
+
         if result is None:
             return False, 9999.0
         else:
@@ -249,24 +252,24 @@ async def check_target_async(target_config: Dict, ping_count: int = PING_COUNT) 
     cohort = infer_cohort(target_config)
     multiplier = TIMEOUT_MULTIPLIERS.get(cohort, 2.0)
     timeout = max(PING_TIMEOUT, (latency_threshold / 1000.0) * multiplier)
-    
+
     loss_count = 0
     latencies = []
-    
+
     for i in range(ping_count):
         success, latency = await ping_target(target_ip, timeout)
-        
+
         if success:
             latencies.append(latency)
         else:
             loss_count += 1
-        
+
         if i < ping_count - 1:
             await asyncio.sleep(PING_DELAY)
-    
+
     loss_pct = (loss_count / ping_count) * 100
     avg_latency = statistics.mean(latencies) if latencies else 9999.0
-    
+
     is_healthy = loss_pct < LOSS_THRESHOLD and avg_latency < latency_threshold
 
     return {
@@ -332,10 +335,10 @@ async def check_all_targets(targets: List[Dict],
         is_healthy = recheck_passed
     else:
         is_healthy = True
-    
+
     avg_loss = statistics.mean(float(r['loss_pct']) for r in results)
     avg_latency = statistics.mean(float(r['avg_latency']) for r in results)
-    
+
     target_details = ', '.join([f"{r['name']}={float(r['loss_pct']):.0f}%/{float(r['avg_latency']):.0f}ms" for r in results])
     quarantined = sum(1 for s in reputation_state.values() if now_ts < s.get('quarantined_until', 0.0))
     # Reset quarantines if >50% targets quarantined (system lost discrimination)
@@ -349,7 +352,7 @@ async def check_all_targets(targets: List[Dict],
         f"score={health_score:.2f},cohorts_fail={failing_cohorts},quarantine={quarantined},{recheck_note}"
         f" | {target_details}"
     )
-    
+
     return is_healthy, avg_loss, avg_latency, details
 
 def update_route(api, comment: str, is_healthy: bool, metrics: Tuple[float, float],
@@ -409,13 +412,13 @@ def is_interface_up(api, interface_name: str) -> bool:
             return False
         if result[0].get('running', 'false') != 'true':
             return False
-        
+
         # PPPoE shows 'running=true' before IP is assigned
         v4_addr_resource = api.get_resource('/ip/address')
         v4_addrs = v4_addr_resource.get(interface=interface_name)
         if not v4_addrs:
             return False
-        
+
         return True
     except Exception as e:
         log(f"Error checking interface status: {e}")

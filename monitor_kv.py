@@ -8,78 +8,83 @@ import asyncio
 import random
 import subprocess
 import re
+import os
 
-# --- CONFIGURATION (BSNL) ---
-ROUTER_HOST = "10.1.1.1"
-ROUTER_USER = "api-controller"
-ROUTER_PASS = "kunjambu@1999"
+ROUTER_HOST = os.environ.get("ROUTER_HOST", "10.1.1.1")
+ROUTER_USER = os.environ.get("ROUTER_USER", "")
+ROUTER_PASS = os.environ.get("ROUTER_PASS", "")
+if not ROUTER_PASS:
+    raise ValueError("ROUTER_PASS environment variable must be set")
 
 TARGETS_V4 = [
-    {'ip': '218.248.112.1', 'latency': 15, 'name': 'DNS', 'cohort': 'isp'},
+    {'ip': '103.160.195.230', 'latency': 10, 'name': 'DNS', 'cohort': 'isp'},
+    {'ip': '103.153.93.230', 'latency': 10, 'name': 'DNS', 'cohort': 'isp'},
     {'ip': '8.8.8.8', 'latency': 20, 'name': 'Google', 'cohort': 'anycast'},
-    {'ip': '142.251.43.46', 'latency': 20, 'name': 'Google-Priority', 'cohort': 'priority'},
+    {'ip': '142.251.221.174', 'latency': 20, 'name': 'Google-Priority', 'cohort': 'priority'},
     {'ip': '1.1.1.1', 'latency': 20, 'name': 'Cloudflare', 'cohort': 'anycast'},
-    {'ip': '117.250.238.251', 'latency': 20, 'name': 'BSNL-MAA-Speedtest', 'cohort': 'isp'},
-    {'ip': '117.205.67.171', 'latency': 35, 'name': 'BSNL-HYD-Speedtest', 'cohort': 'isp'},
-    {'ip': '49.45.64.214', 'latency': 10, 'name': 'JIO-COK-Speedtest', 'cohort': 'regional'},
-    {'ip': '152.52.30.118', 'latency': 25, 'name': 'AIRTEL-MAA-Speedtest', 'cohort': 'regional'},
-    {'ip': '16.112.0.0', 'latency': 35, 'name': 'AWS-HYD', 'cohort': 'regional'},
-    {'ip': '3.6.0.0', 'latency': 50, 'name': 'AWS-BOM', 'cohort': 'regional'},
-    {'ip': '62.72.40.91', 'latency': 35, 'name': 'Contabo-BOM', 'cohort': 'regional'},
-    {'ip': '148.113.1.33', 'latency': 45, 'name': 'OVH-BOM', 'cohort': 'regional'},
+    {'ip': '103.153.93.231', 'latency': 10, 'name': 'KV-TRV-Speedtest', 'cohort': 'isp'},
+    {'ip': '103.160.195.234', 'latency': 10, 'name': 'KV-COK-Speedtest', 'cohort': 'isp'},
+    {'ip': '49.45.64.214', 'latency': 55, 'name': 'JIO-COK-Speedtest', 'cohort': 'regional'},
+    {'ip': '152.52.30.118', 'latency': 40, 'name': 'AIRTEL-MAA-Speedtest', 'cohort': 'regional'},
+    {'ip': '16.112.0.0', 'latency': 30, 'name': 'AWS-HYD', 'cohort': 'regional'},
+    {'ip': '3.6.0.0', 'latency': 40, 'name': 'AWS-BOM', 'cohort': 'regional'},
+    {'ip': '62.72.40.91', 'latency': 30, 'name': 'Contabo-BOM', 'cohort': 'regional'},
+    {'ip': '148.113.1.33', 'latency': 30, 'name': 'OVH-BOM', 'cohort': 'regional'},
     {'ip': '172.232.96.28', 'latency': 20, 'name': 'Linode-MAA', 'cohort': 'regional'},
-    {'ip': '172.105.33.31', 'latency': 40, 'name': 'Linode-BOM', 'cohort': 'regional'},
-    {'ip': '9.9.9.9', 'latency': 40, 'name': 'Quad9', 'cohort': 'anycast'},
+    {'ip': '172.105.33.31', 'latency': 30, 'name': 'Linode-BOM', 'cohort': 'regional'},
+    {'ip': '9.9.9.9', 'latency': 30, 'name': 'Quad9', 'cohort': 'anycast'},
     {'ip': '208.67.222.222', 'latency': 30, 'name': 'OpenDNS', 'cohort': 'anycast'},
     {'ip': '65.20.66.100', 'latency': 35, 'name': 'Vultr-BOM', 'cohort': 'regional'},
-    {'ip': '139.84.130.100', 'latency': 15, 'name': 'Vultr-BLR', 'cohort': 'regional'},
+    {'ip': '139.84.130.100', 'latency': 35, 'name': 'Vultr-BLR', 'cohort': 'regional'},
     {'ip': '151.101.0.204', 'latency': 20, 'name': 'Fastly', 'cohort': 'regional'},
-    {'ip': '129.159.225.168', 'latency': 50, 'name': 'Oracle-BOM', 'cohort': 'regional'},
+    {'ip': '129.159.225.168', 'latency': 30, 'name': 'Oracle-BOM', 'cohort': 'regional'},
     {'ip': '139.162.23.4', 'latency': 55, 'name': 'Linode-SGP', 'cohort': 'regional'},
     {'ip': '45.90.28.0', 'latency': 30, 'name': 'NextDNS', 'cohort': 'anycast'},
     {'ip': '94.140.14.14', 'latency': 60, 'name': 'AdGuard', 'cohort': 'anycast'},
-    {'ip': '193.0.14.129', 'latency': 60, 'name': 'K-root', 'cohort': 'anycast'},
+    {'ip': '193.0.14.129', 'latency': 30, 'name': 'K-root', 'cohort': 'anycast'},
     {'ip': '192.5.5.241', 'latency': 20, 'name': 'F-root', 'cohort': 'anycast'},
-    {'ip': '199.7.83.42', 'latency': 60, 'name': 'L-root', 'cohort': 'anycast'},
-    {'ip': '129.159.225.168', 'latency': 50, 'name': 'Oracle-HYD', 'cohort': 'regional'},
-    {'ip': '5.223.7.195', 'latency': 55, 'name': 'Hetzner-SGP', 'cohort': 'regional'},
+    {'ip': '199.7.83.42', 'latency': 30, 'name': 'L-root', 'cohort': 'anycast'},
+    {'ip': '129.159.225.168', 'latency': 30, 'name': 'Oracle-HYD', 'cohort': 'regional'},
+    {'ip': '5.223.7.195', 'latency': 60, 'name': 'Hetzner-SGP', 'cohort': 'regional'},
 ]
 
 TARGETS_V6 = [
-    {'ip': '2001:4490:3ffe:13::4', 'latency': 20, 'name': 'DNS', 'cohort': 'isp'},
+    {'ip': '2001:df7:4d80:34::13:8754', 'latency': 10, 'name': 'DNS', 'cohort': 'isp'},
+    {'ip': '2001:df7:4d80:32::13:8754', 'latency': 10, 'name': 'DNS', 'cohort': 'isp'},
+    {'ip': '2001:df5:2380:c000:103:153:93:60', 'latency': 10, 'name': 'DNS', 'cohort': 'isp'},
     {'ip': '2001:4860:4860::8888', 'latency': 20, 'name': 'Google', 'cohort': 'anycast'},
-    {'ip': '2404:6800:4007:834::200e', 'latency': 20, 'name': 'Google-Priority', 'cohort': 'priority'},
+    {'ip': '2404:6800:4007:830::200e', 'latency': 20, 'name': 'Google-Priority', 'cohort': 'priority'},
     {'ip': '2606:4700:4700::1111', 'latency': 20, 'name': 'Cloudflare', 'cohort': 'anycast'},
-    {'ip': '2001:4490:dff4:e00::3', 'latency': 25, 'name': 'BSNL-MAA-Speedtest', 'cohort': 'isp'},
-    {'ip': '2001:4490:dff0:600::3', 'latency': 30, 'name': 'BSNL-HYD-Speedtest', 'cohort': 'isp'},
-    {'ip': '2405:200:1670:200:49:45:64:d2', 'latency': 10, 'name': 'JIO-COK-Speedtest', 'cohort': 'regional'},
+    {'ip': '2001:df5:2380:ffff:ffff:ffff:0:31', 'latency': 10, 'name': 'KV-TRV-Speedtest', 'cohort': 'isp'},
+    {'ip': '2001:df5:d380:8001::15', 'latency': 10, 'name': 'KV-COK-Speedtest', 'cohort': 'isp'},
+    {'ip': '2405:200:1670:200:49:45:64:d2', 'latency': 30, 'name': 'JIO-COK-Speedtest', 'cohort': 'regional'},
     {'ip': '2404:a800:3a00:1::a3a', 'latency': 25, 'name': 'AIRTEL-MAA-Speedtest', 'cohort': 'regional'},
-    {'ip': '2406:da1b:354:a600::ec2', 'latency': 30, 'name': 'AWS-HYD', 'cohort': 'regional'},
-    {'ip': '2406:da1a:ddd:7400::ec2', 'latency': 45, 'name': 'AWS-BOM', 'cohort': 'regional'},
-    {'ip': '2400:d321:5028:1091::', 'latency': 45, 'name': 'Contabo-BOM', 'cohort': 'regional'},
-    {'ip': '2402:1f00:8300:121::', 'latency': 35, 'name': 'OVH-BOM', 'cohort': 'regional'},
-    {'ip': '2600:3c08::f03c:93ff:fe7c:11f2', 'latency': 20, 'name': 'Linode-MAA', 'cohort': 'regional'},
-    {'ip': '2400:8904::f03c:91ff:fea5:928b', 'latency': 35, 'name': 'Linode-BOM', 'cohort': 'regional'},
-    {'ip': '2620:fe::fe', 'latency': 30, 'name': 'Quad9', 'cohort': 'anycast'},
-    {'ip': '2620:119:35::35', 'latency': 30, 'name': 'OpenDNS', 'cohort': 'anycast'},
+    {'ip': '2406:da1b:354:a600::ec2', 'latency': 35, 'name': 'AWS-HYD', 'cohort': 'regional'},
+    {'ip': '2406:da1a:ddd:7400::ec2', 'latency': 35, 'name': 'AWS-BOM', 'cohort': 'regional'},
+    {'ip': '2400:d321:5028:1091::', 'latency': 30, 'name': 'Contabo-BOM', 'cohort': 'regional'},
+    {'ip': '2402:1f00:8300:121::', 'latency': 30, 'name': 'OVH-BOM', 'cohort': 'regional'},
+    {'ip': '2600:3c08::f03c:93ff:fe7c:11f2', 'latency': 25, 'name': 'Linode-MAA', 'cohort': 'regional'},
+    {'ip': '2400:8904::f03c:91ff:fea5:928b', 'latency': 30, 'name': 'Linode-BOM', 'cohort': 'regional'},
+    {'ip': '2620:fe::fe', 'latency': 20, 'name': 'Quad9', 'cohort': 'anycast'},
+    {'ip': '2620:119:35::35', 'latency': 40, 'name': 'OpenDNS', 'cohort': 'anycast'},
     {'ip': '2401:c080:2400:108b:5400:3ff:fef0:2934', 'latency': 30, 'name': 'Vultr-BOM', 'cohort': 'regional'},
-    {'ip': '2401:c080:3000:2048:5400:4ff:fe1d:7185', 'latency': 20, 'name': 'Vultr-BLR', 'cohort': 'regional'},
+    {'ip': '2401:c080:3000:2048:5400:4ff:fe1d:7185', 'latency': 30, 'name': 'Vultr-BLR', 'cohort': 'regional'},
     {'ip': '2a04:4e42::204', 'latency': 20, 'name': 'Fastly', 'cohort': 'regional'},
-    {'ip': '2603:c021:4006:4501:7c42:2b2d:a083:df0a', 'latency': 45, 'name': 'Oracle-BOM', 'cohort': 'regional'},
-    {'ip': '2400:8901::f03c:91ff:fe84:541d', 'latency': 50, 'name': 'Linode-SGP', 'cohort': 'regional'},
-    {'ip': '2a07:a8c0::', 'latency': 20, 'name': 'NextDNS', 'cohort': 'anycast'},
-    {'ip': '2a10:50c0::ad1:ff', 'latency': 50, 'name': 'AdGuard', 'cohort': 'anycast'},
-    {'ip': '2001:7fd::1', 'latency': 30, 'name': 'K-root', 'cohort': 'anycast'},
+    {'ip': '2603:c021:4006:4501:7c42:2b2d:a083:df0a', 'latency': 35, 'name': 'Oracle-BOM', 'cohort': 'regional'},
+    {'ip': '2400:8901::f03c:91ff:fe84:541d', 'latency': 75, 'name': 'Linode-SGP', 'cohort': 'regional'},
+    {'ip': '2a07:a8c0::', 'latency': 30, 'name': 'NextDNS', 'cohort': 'anycast'},
+    {'ip': '2a10:50c0::ad1:ff', 'latency': 110, 'name': 'AdGuard', 'cohort': 'anycast'},
+    {'ip': '2001:7fd::1', 'latency': 50, 'name': 'K-root', 'cohort': 'anycast'},
     {'ip': '2001:500:2f::f', 'latency': 20, 'name': 'F-root', 'cohort': 'anycast'},
-    {'ip': '2001:500:9f::42', 'latency': 50, 'name': 'L-root', 'cohort': 'anycast'},
-    {'ip': '2603:c024:8001:1201:494b:14e8:2a00:f397', 'latency': 50, 'name': 'Oracle-HYD', 'cohort': 'regional'},
-    {'ip': '2a01:4ff:2ef::fa57:1', 'latency': 55, 'name': 'Hetzner-SGP', 'cohort': 'regional'},
+    {'ip': '2001:500:9f::42', 'latency': 40, 'name': 'L-root', 'cohort': 'anycast'},
+    {'ip': '2603:c024:8001:1201:494b:14e8:2a00:f397', 'latency': 35, 'name': 'Oracle-HYD', 'cohort': 'regional'},
+    {'ip': '2a01:4ff:2ef::fa57:1', 'latency': 60, 'name': 'Hetzner-SGP', 'cohort': 'regional'},
 ]
 
-WAN_INTERFACE = "pppoe-as9829"
+WAN_INTERFACE = "pppoe-as138754"
 
-ROUTE_COMMENT_V4 = "AS9829 Primary"
-ROUTE_COMMENT_V6 = "AS9829 v6 Primary"
+ROUTE_COMMENT_V4 = "AS138754 Primary"
+ROUTE_COMMENT_V6 = "AS138754 v6 Primary"
 
 NORMAL_DISTANCE = 1
 FAILOVER_DISTANCE = 10
@@ -123,7 +128,7 @@ TIMEOUT_MULTIPLIERS = {
 
 def calculate_latency_threshold(measured_ms: float, cohort: str) -> int:
     """Calculate latency threshold based on measured value and cohort rules.
-    
+
     Rules:
     - If measured < 10ms: round up to next 10
     - If cohort is 'priority' or 'anycast': round up to next 10
@@ -132,7 +137,7 @@ def calculate_latency_threshold(measured_ms: float, cohort: str) -> int:
     if measured_ms < 10:
         # Round up to next 10
         return 10
-    
+
     if cohort in ('priority', 'anycast'):
         # Round up to next 10
         return int((measured_ms // 10) + 1) * 10
@@ -232,7 +237,7 @@ async def ping_target(target_ip: str, timeout: float) -> Tuple[bool, float]:
         result = await loop.run_in_executor(
             None, lambda: _ping_subprocess(target_ip, timeout)
         )
-        
+
         if result is None:
             return False, 9999.0
         else:
@@ -247,24 +252,24 @@ async def check_target_async(target_config: Dict, ping_count: int = PING_COUNT) 
     cohort = infer_cohort(target_config)
     multiplier = TIMEOUT_MULTIPLIERS.get(cohort, 2.0)
     timeout = max(PING_TIMEOUT, (latency_threshold / 1000.0) * multiplier)
-    
+
     loss_count = 0
     latencies = []
-    
+
     for i in range(ping_count):
         success, latency = await ping_target(target_ip, timeout)
-        
+
         if success:
             latencies.append(latency)
         else:
             loss_count += 1
-        
+
         if i < ping_count - 1:
             await asyncio.sleep(PING_DELAY)
-    
+
     loss_pct = (loss_count / ping_count) * 100
     avg_latency = statistics.mean(latencies) if latencies else 9999.0
-    
+
     is_healthy = loss_pct < LOSS_THRESHOLD and avg_latency < latency_threshold
 
     return {
@@ -330,10 +335,10 @@ async def check_all_targets(targets: List[Dict],
         is_healthy = recheck_passed
     else:
         is_healthy = True
-    
+
     avg_loss = statistics.mean(float(r['loss_pct']) for r in results)
     avg_latency = statistics.mean(float(r['avg_latency']) for r in results)
-    
+
     target_details = ', '.join([f"{r['name']}={float(r['loss_pct']):.0f}%/{float(r['avg_latency']):.0f}ms" for r in results])
     quarantined = sum(1 for s in reputation_state.values() if now_ts < s.get('quarantined_until', 0.0))
     # Reset quarantines if >50% targets quarantined (system lost discrimination)
@@ -347,7 +352,7 @@ async def check_all_targets(targets: List[Dict],
         f"score={health_score:.2f},cohorts_fail={failing_cohorts},quarantine={quarantined},{recheck_note}"
         f" | {target_details}"
     )
-    
+
     return is_healthy, avg_loss, avg_latency, details
 
 def update_route(api, comment: str, is_healthy: bool, metrics: Tuple[float, float],
@@ -407,13 +412,13 @@ def is_interface_up(api, interface_name: str) -> bool:
             return False
         if result[0].get('running', 'false') != 'true':
             return False
-        
+
         # PPPoE shows 'running=true' before IP is assigned
         v4_addr_resource = api.get_resource('/ip/address')
         v4_addrs = v4_addr_resource.get(interface=interface_name)
         if not v4_addrs:
             return False
-        
+
         return True
     except Exception as e:
         log(f"Error checking interface status: {e}")
@@ -430,7 +435,7 @@ def disconnect_api(connection) -> None:
 
 def monitor() -> None:
     log("=" * 70)
-    log("BSNL (AS9829) Dual-Stack Failover Monitor - NO FLUSH VARIANT")
+    log("KV (AS138754) Dual-Stack Failover Monitor - NO FLUSH VARIANT")
     log("=" * 70)
     log(f"Router: {ROUTER_HOST}")
     log(f"WAN Interface: {WAN_INTERFACE}")
