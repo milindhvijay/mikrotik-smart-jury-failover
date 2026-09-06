@@ -1,0 +1,87 @@
+# IP,LatencyThreshold,Name,Cohort
+218.248.112.1,20,DNS,isp
+218.248.112.97,10,DNS,isp
+218.248.90.21,25,DNS,isp
+8.8.8.8,20,Google,anycast
+142.251.221.206,20,Google-Priority-1,priority
+142.251.221.164,20,Google-Priority-2,priority
+1.1.1.1,20,Cloudflare,anycast
+104.16.142.237,20,Cloudflare,anycast
+104.16.143.237,20,Cloudflare,anycast
+57.144.56.1,25,Meta,anycast
+# Disabled 2026-09-06: no replies during repeated live checks
+# 117.250.238.251,20,BSNL-MAA-Speedtest,isp
+49.45.64.214,10,JIO-COK-Speedtest,regional_in
+152.52.30.118,25,AIRTEL-MAA-Speedtest,regional_in
+14.142.20.36,10,TATA-EKM-Speedtest,regional_in
+16.112.0.0,35,AWS-HYD,regional_in
+3.6.0.0,50,AWS-BOM,regional_in
+62.72.40.91,35,Contabo-BOM,regional_in
+148.113.1.33,45,OVH-BOM,regional_in
+172.232.96.28,20,Linode-MAA,regional_in
+172.105.33.31,40,Linode-BOM,regional_in
+65.20.66.100,35,Vultr-BOM,regional_in
+139.84.130.100,15,Vultr-BLR,regional_in
+152.67.9.71,50,Oracle-BOM,regional_in
+139.162.23.4,55,Linode-SGP,regional_apac
+45.90.28.0,30,NextDNS,anycast
+193.0.14.129,60,K-root,anycast
+192.5.5.241,20,F-root,anycast
+199.7.83.42,60,L-root,anycast
+129.159.225.168,50,Oracle-HYD,regional_in
+194.156.163.5,60,Misaka-SGP,regional_apac
+# Disabled 2026-09-06: no replies during repeated live checks
+# 2001:4490:3ffe:13::24,10,DNS,isp
+2001:4490:efe0:600::4,30,DNS,isp
+2001:4860:4860::8888,20,Google,anycast
+2404:6800:4007:838::200e,20,Google-Priority-1,priority
+2404:6800:4007:808::2004,20,Google-Priority-2,priority
+2606:4700:4700::1111,20,Cloudflare,anycast
+2606:4700::6810:8eed,20,Cloudflare,anycast
+2606:4700::6810:8fed,20,Cloudflare,anycast
+2a03:2880:f335:1:face:b00c:0:25de,25,Meta,anycast
+# Disabled 2026-09-06: no replies during repeated live checks
+# 2001:4490:dff4:e00::3,25,BSNL-MAA-Speedtest,isp
+2405:200:1670:200:49:45:64:d2,10,JIO-COK-Speedtest,regional_in
+2404:a800:3a00:1::a3a,25,AIRTEL-MAA-Speedtest,regional_in
+2403:0:4:3::4,10,TATA-EKM-Speedtest,regional_in
+2406:da1b:354:a600::ec2,30,AWS-HYD,regional_in
+2406:da1a:ddd:7400::ec2,45,AWS-BOM,regional_in
+2400:d321:5028:1091::,45,Contabo-BOM,regional_in
+2402:1f00:8300:121::,35,OVH-BOM,regional_in
+2600:3c08::f03c:93ff:fe7c:11f2,20,Linode-MAA,regional_in
+2400:8904::f03c:91ff:fea5:928b,35,Linode-BOM,regional_in
+2401:c080:2400:108b:5400:3ff:fef0:2934,30,Vultr-BOM,regional_in
+2401:c080:3000:2048:5400:4ff:fe1d:7185,20,Vultr-BLR,regional_in
+2a04:4e42::204,20,Fastly,regional_in
+2603:c021:4006:4501:7c42:2b2d:a083:df0a,45,Oracle-BOM,regional_in
+2400:8901::f03c:91ff:fe84:541d,50,Linode-SGP,regional_apac
+2a07:a8c0::,20,NextDNS,anycast
+2001:7fd::1,30,K-root,anycast
+2001:500:2f::f,20,F-root,anycast
+2001:500:9f::42,50,L-root,anycast
+2603:c024:8001:1201:494b:14e8:2a00:f397,50,Oracle-HYD,regional_in
+2407:b9c0:e000::5,60,Misaka-SGP,regional_apac
+
+# Additional providers validated on 2026-09-06
+76.76.2.0,30,ControlD,anycast
+2606:1a40::,45,ControlD,anycast
+192.203.230.10,35,Root-E-NASA,anycast
+2001:500:a8::e,30,Root-E-NASA,anycast
+2001:7fe::53,55,Root-I-Netnod,anycast
+199.7.91.13,40,Root-D-UMD,anycast
+172.232.96.36,25,Caasify-Chennai-5,regional_in
+159.65.132.3,60,Caasify-Singapore-1,regional_apac
+5.223.7.195,55,Hetzner-Singapore,regional_apac
+172.236.129.31,55,Akamai-Singapore-2,regional_apac
+2600:3c15::f03c:94ff:fe13:db17,55,Akamai-Singapore-2,regional_apac
+205.147.103.169,55,E2E-Noida,regional_in
+2a10:50c0::ad1:ff,55,AdGuard,anycast
+45.11.45.11,55,DNS.SB-xTom,anycast
+2a11::,55,DNS.SB-xTom,anycast
+185.228.168.9,55,CleanBrowsing,anycast
+2a0d:2a00:1::2,55,CleanBrowsing,anycast
+2620:fe::9,45,Quad9,anycast
+170.247.170.2,55,Root-B-USC,anycast
+2801:1b8:10::b,55,Root-B-USC,anycast
+45.32.100.168,55,Caasify-Singapore-6,regional_apac

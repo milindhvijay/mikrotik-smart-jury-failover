@@ -1,0 +1,346 @@
+{
+  "deployed_additions": [
+    {
+      "ip": "76.76.2.0",
+      "name": "ControlD",
+      "cohort": "anycast",
+      "family": 4,
+      "source": "https://docs.controld.com/docs/free-dns",
+      "baseline_ms": 55,
+      "soak": {
+        "sent": 216,
+        "received": 216,
+        "loss": 0.0,
+        "median_ms": 54.0,
+        "p95_ms": 55.1,
+        "max_ms": 83.0
+      }
+    },
+    {
+      "ip": "2606:1a40::",
+      "name": "ControlD",
+      "cohort": "anycast",
+      "family": 6,
+      "source": "https://docs.controld.com/docs/free-dns",
+      "baseline_ms": 45,
+      "soak": {
+        "sent": 216,
+        "received": 216,
+        "loss": 0.0,
+        "median_ms": 40.8,
+        "p95_ms": 41.5,
+        "max_ms": 44.9
+      }
+    },
+    {
+      "ip": "94.140.14.14",
+      "name": "AdGuard",
+      "cohort": "anycast",
+      "family": 4,
+      "source": "https://adguard-dns.io/en/public-dns.html",
+      "baseline_ms": 60,
+      "soak": {
+        "sent": 216,
+        "received": 216,
+        "loss": 0.0,
+        "median_ms": 59.349999999999994,
+        "p95_ms": 59.9,
+        "max_ms": 60.8
+      }
+    },
+    {
+      "ip": "2001:500:a8::e",
+      "name": "Root-E-NASA",
+      "cohort": "anycast",
+      "family": 6,
+      "source": "https://www.iana.org/domains/root/servers",
+      "baseline_ms": 25,
+      "soak": {
+        "sent": 216,
+        "received": 216,
+        "loss": 0.0,
+        "median_ms": 20.5,
+        "p95_ms": 21.0,
+        "max_ms": 29.2
+      }
+    },
+    {
+      "ip": "192.36.148.17",
+      "name": "Root-I-Netnod",
+      "cohort": "anycast",
+      "family": 4,
+      "source": "https://www.iana.org/domains/root/servers",
+      "baseline_ms": 70,
+      "soak": {
+        "sent": 216,
+        "received": 216,
+        "loss": 0.0,
+        "median_ms": 59.3,
+        "p95_ms": 59.8,
+        "max_ms": 62.8
+      }
+    },
+    {
+      "ip": "2001:7fe::53",
+      "name": "Root-I-Netnod",
+      "cohort": "anycast",
+      "family": 6,
+      "source": "https://www.iana.org/domains/root/servers",
+      "baseline_ms": 80,
+      "soak": {
+        "sent": 216,
+        "received": 216,
+        "loss": 0.0,
+        "median_ms": 78.4,
+        "p95_ms": 79.0,
+        "max_ms": 85.4
+      }
+    },
+    {
+      "ip": "199.7.91.13",
+      "name": "Root-D-UMD",
+      "cohort": "anycast",
+      "family": 4,
+      "source": "https://www.iana.org/domains/root/servers",
+      "baseline_ms": 45,
+      "soak": {
+        "sent": 216,
+        "received": 216,
+        "loss": 0.0,
+        "median_ms": 44.8,
+        "p95_ms": 46.6,
+        "max_ms": 50.8
+      }
+    },
+    {
+      "ip": "202.12.27.33",
+      "name": "Root-M-WIDE",
+      "cohort": "anycast",
+      "family": 4,
+      "source": "https://www.iana.org/domains/root/servers",
+      "baseline_ms": 50,
+      "soak": {
+        "sent": 216,
+        "received": 216,
+        "loss": 0.0,
+        "median_ms": 46.1,
+        "p95_ms": 47.1,
+        "max_ms": 47.7
+      }
+    },
+    {
+      "ip": "172.232.96.36",
+      "name": "Caasify-Chennai-5",
+      "cohort": "regional_in",
+      "family": 4,
+      "source": "https://caasify.com/cloud-vps/looking-glass",
+      "baseline_ms": 20,
+      "soak": {
+        "sent": 216,
+        "received": 216,
+        "loss": 0.0,
+        "median_ms": 17.2,
+        "p95_ms": 17.9,
+        "max_ms": 37.6
+      }
+    },
+    {
+      "ip": "159.65.132.3",
+      "name": "Caasify-Singapore-1",
+      "cohort": "regional_apac",
+      "family": 4,
+      "source": "https://caasify.com/cloud-vps/looking-glass",
+      "baseline_ms": 65,
+      "soak": {
+        "sent": 216,
+        "received": 216,
+        "loss": 0.0,
+        "median_ms": 53.9,
+        "p95_ms": 54.7,
+        "max_ms": 60.5
+      }
+    },
+    {
+      "ip": "5.223.7.195",
+      "name": "Hetzner-Singapore",
+      "cohort": "regional_apac",
+      "family": 4,
+      "source": "https://sin-speed.hetzner.com/",
+      "baseline_ms": 65,
+      "soak": {
+        "sent": 216,
+        "received": 216,
+        "loss": 0.0,
+        "median_ms": 58.45,
+        "p95_ms": 58.9,
+        "max_ms": 63.0
+      }
+    },
+    {
+      "ip": "172.236.129.31",
+      "name": "Akamai-Singapore-2",
+      "cohort": "regional_apac",
+      "family": 4,
+      "source": "https://sg-sin-2.speedtest.linode.com/",
+      "baseline_ms": 75,
+      "soak": {
+        "sent": 216,
+        "received": 216,
+        "loss": 0.0,
+        "median_ms": 72.5,
+        "p95_ms": 73.2,
+        "max_ms": 82.0
+      }
+    },
+    {
+      "ip": "2600:3c15::f03c:94ff:fe13:db17",
+      "name": "Akamai-Singapore-2",
+      "cohort": "regional_apac",
+      "family": 6,
+      "source": "https://sg-sin-2.speedtest.linode.com/",
+      "baseline_ms": 70,
+      "soak": {
+        "sent": 216,
+        "received": 216,
+        "loss": 0.0,
+        "median_ms": 63.2,
+        "p95_ms": 63.8,
+        "max_ms": 64.6
+      }
+    },
+    {
+      "ip": "205.147.103.169",
+      "name": "E2E-Noida",
+      "cohort": "regional_in",
+      "family": 4,
+      "source": "https://lg.e2enetworks.net/",
+      "baseline_ms": 50,
+      "soak": {
+        "sent": 216,
+        "received": 216,
+        "loss": 0.0,
+        "median_ms": 47.4,
+        "p95_ms": 48.1,
+        "max_ms": 51.1
+      }
+    },
+    {
+      "ip": "2a0d:2a00:2::2",
+      "name": "CleanBrowsing",
+      "cohort": "anycast",
+      "family": 6,
+      "source": "https://cleanbrowsing.org/support/troubleshooting/command-line-dns",
+      "baseline_ms": 65,
+      "soak": {
+        "sent": 216,
+        "received": 216,
+        "loss": 0.0,
+        "median_ms": 59.45,
+        "p95_ms": 61.0,
+        "max_ms": 61.5
+      }
+    },
+    {
+      "ip": "2620:fe::fe",
+      "name": "Quad9",
+      "cohort": "anycast",
+      "family": 6,
+      "source": "https://docs.quad9.net/services/",
+      "baseline_ms": 15,
+      "soak": {
+        "sent": 216,
+        "received": 216,
+        "loss": 0.0,
+        "median_ms": 12.6,
+        "p95_ms": 13.3,
+        "max_ms": 13.7
+      }
+    },
+    {
+      "ip": "2001:500:2d::d",
+      "name": "Root-D-UMD",
+      "cohort": "anycast",
+      "family": 6,
+      "source": "https://www.iana.org/domains/root/servers",
+      "baseline_ms": 25,
+      "soak": {
+        "sent": 216,
+        "received": 216,
+        "loss": 0.0,
+        "median_ms": 20.9,
+        "p95_ms": 21.6,
+        "max_ms": 22.5
+      }
+    },
+    {
+      "ip": "198.97.190.53",
+      "name": "Root-H-Army",
+      "cohort": "anycast",
+      "family": 4,
+      "source": "https://www.iana.org/domains/root/servers",
+      "baseline_ms": 70,
+      "soak": {
+        "sent": 216,
+        "received": 216,
+        "loss": 0.0,
+        "median_ms": 66.5,
+        "p95_ms": 67.1,
+        "max_ms": 68.6
+      }
+    },
+    {
+      "ip": "2801:1b8:10::b",
+      "name": "Root-B-USC",
+      "cohort": "anycast",
+      "family": 6,
+      "source": "https://www.iana.org/domains/root/servers",
+      "baseline_ms": 75,
+      "soak": {
+        "sent": 216,
+        "received": 216,
+        "loss": 0.0,
+        "median_ms": 63.4,
+        "p95_ms": 64.0,
+        "max_ms": 64.7
+      }
+    }
+  ],
+  "rejected_after_soak": [
+    {
+      "ip": "192.203.230.10",
+      "name": "Root-E-NASA",
+      "soak": {
+        "sent": 216,
+        "received": 215,
+        "loss": 0.00462962962962965,
+        "median_ms": 20.0,
+        "p95_ms": 20.6,
+        "max_ms": 57.5
+      }
+    },
+    {
+      "ip": "139.84.138.108",
+      "name": "Caasify-Bangalore-5",
+      "soak": {
+        "sent": 216,
+        "received": 0,
+        "loss": 1.0,
+        "median_ms": null,
+        "p95_ms": null,
+        "max_ms": null
+      }
+    },
+    {
+      "ip": "2a10:50c0::ad2:ff",
+      "name": "AdGuard",
+      "soak": {
+        "sent": 216,
+        "received": 213,
+        "loss": 0.01388888888888884,
+        "median_ms": 57.5,
+        "p95_ms": 58.3,
+        "max_ms": 62.3
+      }
+    }
+  ]
+}

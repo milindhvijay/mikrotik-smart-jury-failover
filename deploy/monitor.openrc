@@ -1,0 +1,27 @@
+#!/sbin/openrc-run
+# Install as /etc/init.d/monitor-bsnl or /etc/init.d/monitor-kv.
+name="Smart Jury ${RC_SVCNAME#monitor-}"
+description="Batched dual-stack WAN health monitor"
+supervisor="supervise-daemon"
+command="/opt/smart-jury/venv/bin/python"
+command_args="-u /opt/smart-jury/jury_monitor.py --isp ${RC_SVCNAME#monitor-} --apply"
+command_user="root"
+pidfile="/run/${RC_SVCNAME}.pid"
+respawn_delay=5
+respawn_max=0
+output_logger="logger -t ${RC_SVCNAME}"
+error_logger="logger -t ${RC_SVCNAME}"
+
+depend() {
+    need net
+    after firewall
+}
+
+start_pre() {
+    [ -r "/etc/smart-jury/${RC_SVCNAME#monitor-}.env" ] || return 1
+    set -a
+    . "/etc/smart-jury/${RC_SVCNAME#monitor-}.env"
+    set +a
+    command -v fping >/dev/null || return 1
+    "${command}" -c 'import routeros_api' || return 1
+}

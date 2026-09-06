@@ -1,0 +1,2177 @@
+{
+  "cycles": 72,
+  "started": 1788700930.4147856,
+  "ended": 1788701285.422261,
+  "health": [
+    {
+      "time": 1788700930.4147856,
+      "cycle_seconds": 1.839,
+      "desired": null,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 34.04901515151516,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.94261261261261,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788700935.4165614,
+      "cycle_seconds": 1.84,
+      "desired": null,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 34.13098484848485,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.99918918918919,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788700940.414333,
+      "cycle_seconds": 1.838,
+      "desired": null,
+      "ipv4": {
+        "score": 0.946969696969697,
+        "failing_cohorts": 0,
+        "loss_pct": 2.962962962962963,
+        "rtt_ms": 33.82480916030534,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.817297297297294,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788700945.4149673,
+      "cycle_seconds": 1.839,
+      "desired": null,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 33.99007575757575,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 35.164054054054056,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788700950.4159436,
+      "cycle_seconds": 1.84,
+      "desired": null,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 34.069318181818176,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 35.00117117117117,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788700955.4149456,
+      "cycle_seconds": 1.838,
+      "desired": null,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 33.95969696969697,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.910360360360364,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788700960.4145396,
+      "cycle_seconds": 1.838,
+      "desired": null,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 33.90939393939394,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.92738738738739,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788700965.41481,
+      "cycle_seconds": 1.838,
+      "desired": null,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 33.937348484848485,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 35.08,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788700970.4144926,
+      "cycle_seconds": 1.838,
+      "desired": null,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 33.95409090909091,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.821711711711714,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788700975.4147437,
+      "cycle_seconds": 1.838,
+      "desired": null,
+      "ipv4": {
+        "score": 0.946969696969697,
+        "failing_cohorts": 0,
+        "loss_pct": 2.962962962962963,
+        "rtt_ms": 33.76595419847328,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.61828828828829,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788700980.4155672,
+      "cycle_seconds": 1.839,
+      "desired": null,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 33.973939393939396,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.61360360360361,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788700985.4159622,
+      "cycle_seconds": 1.839,
+      "desired": null,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 34.239318181818184,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.921171171171174,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788700990.4166524,
+      "cycle_seconds": 1.84,
+      "desired": null,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 34.1244696969697,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.395315315315315,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788700995.4155638,
+      "cycle_seconds": 1.839,
+      "desired": null,
+      "ipv4": {
+        "score": 0.946969696969697,
+        "failing_cohorts": 0,
+        "loss_pct": 2.962962962962963,
+        "rtt_ms": 34.09374045801527,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.45297297297297,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788701000.419776,
+      "cycle_seconds": 1.843,
+      "desired": null,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 34.38977272727273,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.38252252252252,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788701005.415411,
+      "cycle_seconds": 1.838,
+      "desired": null,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 34.106212121212124,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.473153153153156,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788701010.4155736,
+      "cycle_seconds": 1.838,
+      "desired": null,
+      "ipv4": {
+        "score": 0.946969696969697,
+        "failing_cohorts": 0,
+        "loss_pct": 2.962962962962963,
+        "rtt_ms": 34.06786259541985,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.37603603603604,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788701015.416142,
+      "cycle_seconds": 1.839,
+      "desired": null,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 34.10409090909091,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.318198198198196,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788701020.4164793,
+      "cycle_seconds": 1.839,
+      "desired": null,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 34.112196969696974,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.39963963963964,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788701025.4173477,
+      "cycle_seconds": 1.84,
+      "desired": null,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 34.02333333333333,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.38540540540541,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788701030.4154632,
+      "cycle_seconds": 1.838,
+      "desired": null,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 34.12310606060606,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9201834862385321,
+        "failing_cohorts": 0,
+        "loss_pct": 1.8018018018018018,
+        "rtt_ms": 34.15587155963303,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788701035.415834,
+      "cycle_seconds": 1.838,
+      "desired": null,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 34.38704545454546,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.30954954954955,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788701040.4149415,
+      "cycle_seconds": 1.837,
+      "desired": null,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 34.40204545454545,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.383873873873874,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788701045.4166465,
+      "cycle_seconds": 1.839,
+      "desired": null,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 34.23340909090909,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.376126126126124,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788701050.4166625,
+      "cycle_seconds": 1.839,
+      "desired": true,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 34.16287878787879,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.372792792792794,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788701055.4316716,
+      "cycle_seconds": 1.854,
+      "desired": true,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 34.07810606060606,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.40801801801802,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788701060.4166062,
+      "cycle_seconds": 1.839,
+      "desired": true,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 34.06757575757576,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.46297297297297,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788701065.4160478,
+      "cycle_seconds": 1.838,
+      "desired": true,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 34.081818181818186,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.41225225225225,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788701070.417274,
+      "cycle_seconds": 1.839,
+      "desired": true,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 34.21689393939394,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.41045045045045,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788701075.4169385,
+      "cycle_seconds": 1.839,
+      "desired": true,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 34.12916666666667,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.49801801801802,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788701080.4178047,
+      "cycle_seconds": 1.84,
+      "desired": true,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 34.12765151515152,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.41954954954955,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788701085.4173527,
+      "cycle_seconds": 1.839,
+      "desired": true,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 34.14863636363636,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.434954954954954,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788701090.4173455,
+      "cycle_seconds": 1.839,
+      "desired": true,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 34.07212121212122,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.48945945945946,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788701095.4177544,
+      "cycle_seconds": 1.839,
+      "desired": true,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 34.08992424242424,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.41918918918919,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788701100.4417946,
+      "cycle_seconds": 1.863,
+      "desired": true,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 34.2389393939394,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.28252252252253,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788701105.418881,
+      "cycle_seconds": 1.84,
+      "desired": true,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 34.082121212121216,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.660720720720725,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788701110.418051,
+      "cycle_seconds": 1.839,
+      "desired": true,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 34.12098484848485,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.428468468468466,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788701115.4182487,
+      "cycle_seconds": 1.839,
+      "desired": true,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 34.13439393939394,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.41801801801802,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788701120.4174209,
+      "cycle_seconds": 1.839,
+      "desired": true,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 34.29280303030303,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.47171171171171,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788701125.4185138,
+      "cycle_seconds": 1.839,
+      "desired": true,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 34.19674242424242,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.486306306306304,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788701130.418852,
+      "cycle_seconds": 1.84,
+      "desired": true,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 34.54689393939394,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.386936936936934,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788701135.4186237,
+      "cycle_seconds": 1.839,
+      "desired": true,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 34.1625,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.45288288288288,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788701140.4193082,
+      "cycle_seconds": 1.84,
+      "desired": true,
+      "ipv4": {
+        "score": 0.946969696969697,
+        "failing_cohorts": 0,
+        "loss_pct": 2.962962962962963,
+        "rtt_ms": 34.09358778625954,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.43972972972973,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788701145.418501,
+      "cycle_seconds": 1.839,
+      "desired": true,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 34.18333333333333,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.42234234234234,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788701150.4178362,
+      "cycle_seconds": 1.838,
+      "desired": true,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 34.12265151515151,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.37450450450451,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788701155.41957,
+      "cycle_seconds": 1.84,
+      "desired": true,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 34.42628787878788,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.36684684684685,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788701160.4188242,
+      "cycle_seconds": 1.839,
+      "desired": true,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 34.29984848484848,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.406666666666666,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788701165.4186118,
+      "cycle_seconds": 1.839,
+      "desired": true,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 34.20409090909091,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.48477477477478,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788701170.418751,
+      "cycle_seconds": 1.839,
+      "desired": true,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 34.59227272727273,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.4236036036036,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788701175.4206233,
+      "cycle_seconds": 1.84,
+      "desired": true,
+      "ipv4": {
+        "score": 0.946969696969697,
+        "failing_cohorts": 0,
+        "loss_pct": 2.962962962962963,
+        "rtt_ms": 33.98694656488549,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.50396396396396,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788701180.4183977,
+      "cycle_seconds": 1.838,
+      "desired": true,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 34.124848484848485,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.44171171171171,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788701185.4187381,
+      "cycle_seconds": 1.838,
+      "desired": true,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 34.062651515151515,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.468648648648646,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788701190.418539,
+      "cycle_seconds": 1.838,
+      "desired": true,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 34.00598484848485,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.366306306306306,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788701195.4194076,
+      "cycle_seconds": 1.839,
+      "desired": true,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 34.04757575757576,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9055045871559632,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 35.884324324324325,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788701200.4197724,
+      "cycle_seconds": 1.839,
+      "desired": true,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 34.15439393939394,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.39306306306307,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788701205.4207678,
+      "cycle_seconds": 1.84,
+      "desired": true,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 34.156363636363636,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.61432432432432,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788701210.4193182,
+      "cycle_seconds": 1.839,
+      "desired": true,
+      "ipv4": {
+        "score": 0.946969696969697,
+        "failing_cohorts": 0,
+        "loss_pct": 2.962962962962963,
+        "rtt_ms": 33.89969465648855,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.397837837837834,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788701215.418474,
+      "cycle_seconds": 1.838,
+      "desired": true,
+      "ipv4": {
+        "score": 0.9356060606060607,
+        "failing_cohorts": 0,
+        "loss_pct": 3.7037037037037037,
+        "rtt_ms": 33.691384615384614,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.9009009009009009,
+        "rtt_ms": 34.25636363636364,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788701220.4188912,
+      "cycle_seconds": 1.838,
+      "desired": true,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 34.113181818181815,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.38153153153153,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788701225.421337,
+      "cycle_seconds": 1.84,
+      "desired": true,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 34.16257575757576,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.5509009009009,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788701230.4208581,
+      "cycle_seconds": 1.839,
+      "desired": true,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 34.123939393939395,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.41027027027027,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788701235.430261,
+      "cycle_seconds": 1.849,
+      "desired": true,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 34.11712121212121,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.417387387387386,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788701240.4201043,
+      "cycle_seconds": 1.838,
+      "desired": true,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 34.08022727272727,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.39351351351351,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788701245.4201872,
+      "cycle_seconds": 1.838,
+      "desired": true,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 34.03431818181818,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.416846846846845,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788701250.4214256,
+      "cycle_seconds": 1.839,
+      "desired": true,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 34.071363636363635,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.365225225225224,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788701255.4221509,
+      "cycle_seconds": 1.84,
+      "desired": true,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 34.062954545454545,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.45315315315315,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788701260.422447,
+      "cycle_seconds": 1.84,
+      "desired": true,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 34.21128787878788,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.473333333333336,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788701265.4231458,
+      "cycle_seconds": 1.84,
+      "desired": true,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 34.28280303030303,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.43072072072072,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788701270.421888,
+      "cycle_seconds": 1.839,
+      "desired": true,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 34.193939393939395,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.39756756756757,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788701275.421585,
+      "cycle_seconds": 1.839,
+      "desired": true,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 34.232499999999995,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9201834862385321,
+        "failing_cohorts": 0,
+        "loss_pct": 1.8018018018018018,
+        "rtt_ms": 34.116605504587156,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788701280.4226787,
+      "cycle_seconds": 1.839,
+      "desired": true,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 34.15719696969697,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.307117117117116,
+        "bad": false,
+        "recoverable": true
+      }
+    },
+    {
+      "time": 1788701285.422261,
+      "cycle_seconds": 1.838,
+      "desired": true,
+      "ipv4": {
+        "score": 0.9583333333333335,
+        "failing_cohorts": 0,
+        "loss_pct": 2.2222222222222223,
+        "rtt_ms": 34.14272727272727,
+        "bad": false,
+        "recoverable": true
+      },
+      "ipv6": {
+        "score": 0.9330275229357797,
+        "failing_cohorts": 0,
+        "loss_pct": 0.0,
+        "rtt_ms": 34.31135135135135,
+        "bad": false,
+        "recoverable": true
+      }
+    }
+  ],
+  "targets": {
+    "218.248.112.1": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 13.8,
+      "p95_ms": 17.3,
+      "max_ms": 29.5
+    },
+    "218.248.112.97": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 3.635,
+      "p95_ms": 4.14,
+      "max_ms": 10.7
+    },
+    "218.248.90.21": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 22.5,
+      "p95_ms": 23.0,
+      "max_ms": 28.4
+    },
+    "8.8.8.8": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 19.65,
+      "p95_ms": 20.2,
+      "max_ms": 20.5
+    },
+    "142.251.221.206": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 20.0,
+      "p95_ms": 20.5,
+      "max_ms": 20.6
+    },
+    "142.251.221.164": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 17.3,
+      "p95_ms": 17.9,
+      "max_ms": 18.3
+    },
+    "1.1.1.1": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 17.8,
+      "p95_ms": 20.4,
+      "max_ms": 21.0
+    },
+    "104.16.142.237": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 16.4,
+      "p95_ms": 17.1,
+      "max_ms": 27.8
+    },
+    "104.16.143.237": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 17.5,
+      "p95_ms": 18.1,
+      "max_ms": 22.6
+    },
+    "57.144.56.1": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 21.0,
+      "p95_ms": 21.7,
+      "max_ms": 22.7
+    },
+    "49.45.64.214": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 3.77,
+      "p95_ms": 4.32,
+      "max_ms": 15.8
+    },
+    "152.52.30.118": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 19.9,
+      "p95_ms": 20.4,
+      "max_ms": 27.8
+    },
+    "14.142.20.36": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 3.705,
+      "p95_ms": 4.26,
+      "max_ms": 5.22
+    },
+    "16.112.0.0": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 29.8,
+      "p95_ms": 30.5,
+      "max_ms": 33.1
+    },
+    "3.6.0.0": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 35.1,
+      "p95_ms": 36.7,
+      "max_ms": 37.4
+    },
+    "62.72.40.91": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 34.2,
+      "p95_ms": 34.7,
+      "max_ms": 50.6
+    },
+    "148.113.1.33": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 37.2,
+      "p95_ms": 37.6,
+      "max_ms": 45.4
+    },
+    "172.232.96.28": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 20.1,
+      "p95_ms": 20.5,
+      "max_ms": 30.2
+    },
+    "172.105.33.31": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 37.7,
+      "p95_ms": 38.3,
+      "max_ms": 42.8
+    },
+    "65.20.66.100": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 29.8,
+      "p95_ms": 30.4,
+      "max_ms": 30.9
+    },
+    "139.84.130.100": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 13.1,
+      "p95_ms": 13.7,
+      "max_ms": 24.6
+    },
+    "152.67.9.71": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 38.1,
+      "p95_ms": 38.7,
+      "max_ms": 39.0
+    },
+    "139.162.23.4": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 56.9,
+      "p95_ms": 57.4,
+      "max_ms": 70.6
+    },
+    "45.90.28.0": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 46.4,
+      "p95_ms": 47.1,
+      "max_ms": 93.5
+    },
+    "193.0.14.129": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 50.1,
+      "p95_ms": 50.6,
+      "max_ms": 57.5
+    },
+    "192.5.5.241": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 17.8,
+      "p95_ms": 18.3,
+      "max_ms": 18.6
+    },
+    "199.7.83.42": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 60.5,
+      "p95_ms": 62.8,
+      "max_ms": 75.1
+    },
+    "129.159.225.168": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 28.9,
+      "p95_ms": 29.4,
+      "max_ms": 42.3
+    },
+    "194.156.163.5": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 101.0,
+      "p95_ms": 101.0,
+      "max_ms": 108.0
+    },
+    "2001:4490:efe0:600::4": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 18.1,
+      "p95_ms": 18.5,
+      "max_ms": 32.1
+    },
+    "2001:4860:4860::8888": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 21.0,
+      "p95_ms": 21.5,
+      "max_ms": 27.0
+    },
+    "2404:6800:4007:838::200e": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 21.7,
+      "p95_ms": 24.2,
+      "max_ms": 24.9
+    },
+    "2404:6800:4007:808::2004": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 18.9,
+      "p95_ms": 19.4,
+      "max_ms": 19.8
+    },
+    "2606:4700:4700::1111": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 22.8,
+      "p95_ms": 23.4,
+      "max_ms": 71.7
+    },
+    "2606:4700::6810:8eed": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 20.9,
+      "p95_ms": 21.5,
+      "max_ms": 26.9
+    },
+    "2606:4700::6810:8fed": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 18.0,
+      "p95_ms": 18.7,
+      "max_ms": 99.5
+    },
+    "2a03:2880:f335:1:face:b00c:0:25de": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 17.5,
+      "p95_ms": 19.3,
+      "max_ms": 29.0
+    },
+    "2405:200:1670:200:49:45:64:d2": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 8.254999999999999,
+      "p95_ms": 8.87,
+      "max_ms": 9.75
+    },
+    "2404:a800:3a00:1::a3a": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 24.3,
+      "p95_ms": 24.8,
+      "max_ms": 25.2
+    },
+    "2403:0:4:3::4": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 5.98,
+      "p95_ms": 6.55,
+      "max_ms": 13.8
+    },
+    "2406:da1b:354:a600::ec2": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 33.6,
+      "p95_ms": 36.2,
+      "max_ms": 41.9
+    },
+    "2406:da1a:ddd:7400::ec2": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 47.349999999999994,
+      "p95_ms": 47.9,
+      "max_ms": 50.8
+    },
+    "2400:d321:5028:1091::": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 33.1,
+      "p95_ms": 33.5,
+      "max_ms": 35.3
+    },
+    "2402:1f00:8300:121::": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 32.0,
+      "p95_ms": 32.5,
+      "max_ms": 36.6
+    },
+    "2600:3c08::f03c:93ff:fe7c:11f2": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 20.0,
+      "p95_ms": 20.5,
+      "max_ms": 20.9
+    },
+    "2400:8904::f03c:91ff:fea5:928b": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 35.2,
+      "p95_ms": 35.7,
+      "max_ms": 39.7
+    },
+    "2401:c080:2400:108b:5400:3ff:fef0:2934": {
+      "sent": 216,
+      "received": 211,
+      "loss": 0.02314814814814814,
+      "median_ms": 48.4,
+      "p95_ms": 48.9,
+      "max_ms": 53.5
+    },
+    "2401:c080:3000:2048:5400:4ff:fe1d:7185": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 17.7,
+      "p95_ms": 18.3,
+      "max_ms": 35.4
+    },
+    "2a04:4e42::204": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 30.4,
+      "p95_ms": 31.0,
+      "max_ms": 31.2
+    },
+    "2603:c021:4006:4501:7c42:2b2d:a083:df0a": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 40.8,
+      "p95_ms": 41.3,
+      "max_ms": 41.9
+    },
+    "2400:8901::f03c:91ff:fe84:541d": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 49.5,
+      "p95_ms": 49.9,
+      "max_ms": 61.8
+    },
+    "2a07:a8c0::": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 52.3,
+      "p95_ms": 55.3,
+      "max_ms": 56.4
+    },
+    "2001:7fd::1": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 69.5,
+      "p95_ms": 69.9,
+      "max_ms": 73.4
+    },
+    "2001:500:2f::f": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 22.3,
+      "p95_ms": 24.9,
+      "max_ms": 43.9
+    },
+    "2001:500:9f::42": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 40.8,
+      "p95_ms": 41.3,
+      "max_ms": 42.6
+    },
+    "2603:c024:8001:1201:494b:14e8:2a00:f397": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 31.9,
+      "p95_ms": 32.6,
+      "max_ms": 39.9
+    },
+    "2407:b9c0:e000::5": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 49.2,
+      "p95_ms": 49.6,
+      "max_ms": 57.4
+    },
+    "76.76.2.0": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 26.4,
+      "p95_ms": 27.3,
+      "max_ms": 62.0
+    },
+    "2606:1a40::": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 43.6,
+      "p95_ms": 44.4,
+      "max_ms": 45.2
+    },
+    "94.140.14.14": {
+      "sent": 216,
+      "received": 211,
+      "loss": 0.02314814814814814,
+      "median_ms": 52.7,
+      "p95_ms": 53.3,
+      "max_ms": 53.8
+    },
+    "192.203.230.10": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 30.8,
+      "p95_ms": 31.6,
+      "max_ms": 33.1
+    },
+    "2001:500:a8::e": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 23.0,
+      "p95_ms": 25.8,
+      "max_ms": 36.1
+    },
+    "192.36.148.17": {
+      "sent": 216,
+      "received": 214,
+      "loss": 0.0092592592592593,
+      "median_ms": 52.0,
+      "p95_ms": 52.8,
+      "max_ms": 53.1
+    },
+    "2001:7fe::53": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 52.3,
+      "p95_ms": 53.1,
+      "max_ms": 65.6
+    },
+    "199.7.91.13": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 38.7,
+      "p95_ms": 39.6,
+      "max_ms": 50.9
+    },
+    "202.12.27.33": {
+      "sent": 216,
+      "received": 214,
+      "loss": 0.0092592592592593,
+      "median_ms": 33.3,
+      "p95_ms": 33.7,
+      "max_ms": 45.7
+    },
+    "139.84.138.108": {
+      "sent": 216,
+      "received": 0,
+      "loss": 1.0,
+      "median_ms": null,
+      "p95_ms": null,
+      "max_ms": null
+    },
+    "172.232.96.36": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 21.9,
+      "p95_ms": 22.8,
+      "max_ms": 35.6
+    },
+    "159.65.132.3": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 56.1,
+      "p95_ms": 56.7,
+      "max_ms": 58.2
+    },
+    "5.223.7.195": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 51.4,
+      "p95_ms": 51.9,
+      "max_ms": 52.1
+    },
+    "172.236.129.31": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 50.7,
+      "p95_ms": 51.4,
+      "max_ms": 51.9
+    },
+    "2600:3c15::f03c:94ff:fe13:db17": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 51.2,
+      "p95_ms": 51.8,
+      "max_ms": 52.2
+    },
+    "205.147.103.169": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 46.5,
+      "p95_ms": 47.1,
+      "max_ms": 56.4
+    },
+    "2a10:50c0::ad1:ff": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 52.4,
+      "p95_ms": 52.9,
+      "max_ms": 53.4
+    },
+    "45.11.45.11": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 50.3,
+      "p95_ms": 51.0,
+      "max_ms": 52.9
+    },
+    "2a11::": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 52.9,
+      "p95_ms": 53.5,
+      "max_ms": 56.6
+    },
+    "185.228.168.9": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 50.4,
+      "p95_ms": 51.1,
+      "max_ms": 51.5
+    },
+    "2a0d:2a00:1::2": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 53.1,
+      "p95_ms": 54.0,
+      "max_ms": 54.7
+    },
+    "2620:fe::9": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 39.1,
+      "p95_ms": 52.8,
+      "max_ms": 72.2
+    },
+    "170.247.170.2": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 53.7,
+      "p95_ms": 54.3,
+      "max_ms": 54.7
+    },
+    "2801:1b8:10::b": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 53.9,
+      "p95_ms": 54.6,
+      "max_ms": 55.5
+    },
+    "45.32.100.168": {
+      "sent": 216,
+      "received": 216,
+      "loss": 0.0,
+      "median_ms": 51.5,
+      "p95_ms": 52.3,
+      "max_ms": 67.1
+    }
+  }
+}

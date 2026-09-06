@@ -1,0 +1,36 @@
+# CANDIDATES ONLY: not approved for production; short-window baselines
+# IP,LatencyThreshold,Name,Cohort
+2620:fe::fe,15,Quad9,anycast
+2620:fe::9,20,Quad9,anycast
+1.0.0.1,15,Cloudflare,anycast
+2606:4700:4700::1001,10,Cloudflare,anycast
+8.8.4.4,20,Google,anycast
+2001:4860:4860::8844,15,Google,anycast
+94.140.14.14,60,AdGuard,anycast
+94.140.15.15,85,AdGuard,anycast
+2a10:50c0::ad2:ff,65,AdGuard,anycast
+2a0d:2a00:1::2,80,CleanBrowsing,anycast
+2a0d:2a00:2::2,65,CleanBrowsing,anycast
+76.76.2.0,30,ControlD,anycast
+76.76.10.0,30,ControlD,anycast
+2606:1a40::,30,ControlD,anycast
+2606:1a40:1::,30,ControlD,anycast
+2801:1b8:10::b,75,Root-B-USC,anycast
+192.33.4.12,70,Root-C-Cogent,anycast
+199.7.91.13,35,Root-D-UMD,anycast
+2001:500:2d::d,20,Root-D-UMD,anycast
+192.203.230.10,25,Root-E-NASA,anycast
+2001:500:a8::e,20,Root-E-NASA,anycast
+198.97.190.53,65,Root-H-Army,anycast
+192.36.148.17,70,Root-I-Netnod,anycast
+2001:7fe::53,80,Root-I-Netnod,anycast
+192.58.128.30,30,Root-J-Verisign,anycast
+2001:503:c27::2:30,30,Root-J-Verisign,anycast
+202.12.27.33,35,Root-M-WIDE,anycast
+139.84.138.108,35,Caasify-Bangalore-5,regional_in
+172.232.96.36,20,Caasify-Chennai-5,regional_in
+159.65.132.3,65,Caasify-Singapore-1,regional_apac
+5.223.7.195,65,Hetzner-Singapore,regional_apac
+172.236.129.31,75,Akamai-Singapore-2,regional_apac
+2600:3c15::f03c:94ff:fe13:db17,70,Akamai-Singapore-2,regional_apac
+205.147.103.169,50,E2E-Noida,regional_in

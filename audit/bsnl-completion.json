@@ -1,0 +1,763 @@
+{
+  "activation": {
+    "targets": 78,
+    "backup": "/root/jury-backups/targets-20260906-132900",
+    "sha256": "ef286fc7019c7ced833961a33abb450819c78df22bb83d7d7b0d33616333cd22",
+    "activated": "2026-09-06T13:29:00.638041+00:00"
+  },
+  "live-result": {
+    "isp": "bsnl",
+    "blocked_family": 4,
+    "started": 1788701368.2166715,
+    "events": [
+      {
+        "event": "before",
+        "time": 1788701368.6224582,
+        "routes": [
+          {
+            "id": "*80000001",
+            "dst-address": "0.0.0.0/0",
+            "routing-table": "route-as9829",
+            "gateway": "pppoe-as9829",
+            "immediate-gw": "pppoe-as9829",
+            "check-gateway": "ping",
+            "distance": "1",
+            "scope": "30",
+            "target-scope": "10",
+            "dynamic": "false",
+            "inactive": "false",
+            "active": "true",
+            "static": "true",
+            "comment": "AS9829 Primary"
+          },
+          {
+            "id": "*80000006",
+            "dst-address": "0.0.0.0/0",
+            "routing-table": "route-as138754",
+            "gateway": "pppoe-as9829",
+            "immediate-gw": "pppoe-as9829",
+            "check-gateway": "ping",
+            "distance": "2",
+            "scope": "30",
+            "target-scope": "10",
+            "dynamic": "false",
+            "inactive": "false",
+            "static": "true",
+            "disabled": "false",
+            "comment": "AS9829 Failover for AS138754"
+          },
+          {
+            "id": "*80000012",
+            "dst-address": "::/0",
+            "routing-table": "v6-route-as9829",
+            "gateway": "pppoe-as9829",
+            "immediate-gw": "pppoe-as9829",
+            "distance": "1",
+            "scope": "30",
+            "target-scope": "10",
+            "dynamic": "false",
+            "inactive": "false",
+            "active": "true",
+            "static": "true",
+            "comment": "AS9829 v6 Primary"
+          },
+          {
+            "id": "*80000015",
+            "dst-address": "::/0",
+            "routing-table": "v6-route-as138754",
+            "pref-src": "",
+            "gateway": "pppoe-as9829",
+            "immediate-gw": "pppoe-as9829",
+            "distance": "2",
+            "scope": "30",
+            "target-scope": "10",
+            "dynamic": "false",
+            "inactive": "false",
+            "static": "true",
+            "disabled": "false",
+            "comment": "AS9829 v6 Failover for AS138754"
+          },
+          {
+            "id": "*80000005",
+            "dst-address": "0.0.0.0/0",
+            "routing-table": "route-as138754",
+            "gateway": "pppoe-as138754",
+            "immediate-gw": "pppoe-as138754",
+            "check-gateway": "ping",
+            "distance": "1",
+            "scope": "30",
+            "target-scope": "10",
+            "dynamic": "false",
+            "inactive": "false",
+            "active": "true",
+            "static": "true",
+            "comment": "AS138754 Primary"
+          },
+          {
+            "id": "*80000002",
+            "dst-address": "0.0.0.0/0",
+            "routing-table": "route-as9829",
+            "gateway": "pppoe-as138754",
+            "immediate-gw": "pppoe-as138754",
+            "check-gateway": "ping",
+            "distance": "2",
+            "scope": "30",
+            "target-scope": "10",
+            "dynamic": "false",
+            "inactive": "false",
+            "static": "true",
+            "disabled": "false",
+            "comment": "AS138754 Failover for AS9829"
+          },
+          {
+            "id": "*80000014",
+            "dst-address": "::/0",
+            "routing-table": "v6-route-as138754",
+            "pref-src": "",
+            "gateway": "pppoe-as138754",
+            "immediate-gw": "pppoe-as138754",
+            "distance": "1",
+            "scope": "30",
+            "target-scope": "10",
+            "dynamic": "false",
+            "inactive": "false",
+            "active": "true",
+            "static": "true",
+            "disabled": "false",
+            "comment": "AS138754 v6 Primary"
+          },
+          {
+            "id": "*80000013",
+            "dst-address": "::/0",
+            "routing-table": "v6-route-as9829",
+            "pref-src": "",
+            "gateway": "pppoe-as138754",
+            "immediate-gw": "pppoe-as138754",
+            "distance": "2",
+            "scope": "30",
+            "target-scope": "10",
+            "dynamic": "false",
+            "inactive": "false",
+            "static": "true",
+            "disabled": "false",
+            "comment": "AS138754 v6 Failover for AS9829"
+          }
+        ],
+        "trace": [
+          {
+            "ip": "117.202.191.107",
+            "colo": "MAA"
+          },
+          {
+            "ip": "2001:4490:4e6d:cc2::1",
+            "colo": "MAA"
+          }
+        ],
+        "protected": {
+          "/ip/route": [
+            {
+              "id": "*80000003",
+              "comment": "AS9829 Only - No Failover",
+              "routing-table": "route-as9829-nofailover",
+              "gateway": "pppoe-as9829",
+              "dst-address": "0.0.0.0/0",
+              "distance": "1",
+              "disabled": "false"
+            },
+            {
+              "id": "*80000004",
+              "comment": "Prevent fallback to main table",
+              "routing-table": "route-as9829-nofailover",
+              "gateway": "",
+              "dst-address": "0.0.0.0/0",
+              "distance": "254",
+              "disabled": "false"
+            },
+            {
+              "id": "*80000007",
+              "comment": "AS138754 Only - No Failover",
+              "routing-table": "route-as138754-nofailover",
+              "gateway": "pppoe-as138754",
+              "dst-address": "0.0.0.0/0",
+              "distance": "1",
+              "disabled": "false"
+            },
+            {
+              "id": "*80000008",
+              "comment": "Prevent fallback to main table",
+              "routing-table": "route-as138754-nofailover",
+              "gateway": "",
+              "dst-address": "0.0.0.0/0",
+              "distance": "254",
+              "disabled": "false"
+            }
+          ],
+          "/ipv6/route": [
+            {
+              "id": "*80000096",
+              "comment": "5G/LTE v6 Failover for AS9829",
+              "routing-table": "v6-route-as9829",
+              "gateway": "fe80::3488:53ff:fe1a:9b2d%lte-as55836",
+              "dst-address": "::/0",
+              "distance": "4",
+              "disabled": "false"
+            },
+            {
+              "id": "*80000016",
+              "comment": "AS9829 v6 Only - No Failover",
+              "routing-table": "v6-route-as9829-nofailover",
+              "gateway": "pppoe-as9829",
+              "dst-address": "::/0",
+              "distance": "1",
+              "disabled": "false"
+            },
+            {
+              "id": "*80000017",
+              "comment": "Prevent fallback to main table",
+              "routing-table": "v6-route-as9829-nofailover",
+              "gateway": "",
+              "dst-address": "::/0",
+              "distance": "254",
+              "disabled": "false"
+            },
+            {
+              "id": "*80000097",
+              "comment": "5G/LTE v6 Failover for AS138754",
+              "routing-table": "v6-route-as138754",
+              "gateway": "fe80::3488:53ff:fe1a:9b2d%lte-as55836",
+              "dst-address": "::/0",
+              "distance": "4",
+              "disabled": "false"
+            },
+            {
+              "id": "*80000018",
+              "comment": "AS138754 v6 Only - No Failover",
+              "routing-table": "v6-route-as138754-nofailover",
+              "gateway": "pppoe-as138754",
+              "dst-address": "::/0",
+              "distance": "1",
+              "disabled": "false"
+            },
+            {
+              "id": "*80000019",
+              "comment": "Prevent fallback to main table",
+              "routing-table": "v6-route-as138754-nofailover",
+              "gateway": "",
+              "dst-address": "::/0",
+              "distance": "254",
+              "disabled": "false"
+            }
+          ]
+        }
+      },
+      {
+        "event": "watchdog_verified",
+        "time": 1788701376.6932094
+      },
+      {
+        "event": "client_path_ready",
+        "time": 1788701376.861936,
+        "trace": [
+          {
+            "ip": "117.202.191.107",
+            "colo": "MAA"
+          },
+          {
+            "ip": "2001:4490:4e6d:cc2::1",
+            "colo": "MAA"
+          }
+        ]
+      },
+      {
+        "event": "fault_started",
+        "time": 1788701377.0154853
+      },
+      {
+        "event": "failed_over",
+        "time": 1788701387.040424,
+        "seconds": 9.89,
+        "trace": [
+          {
+            "ip": "103.178.205.68",
+            "colo": "CNN"
+          },
+          {
+            "ip": "2403:a080:1c:2ee7::1",
+            "colo": "COK"
+          }
+        ],
+        "routes": [
+          {
+            "id": "*80000001",
+            "dst-address": "0.0.0.0/0",
+            "routing-table": "route-as9829",
+            "gateway": "pppoe-as9829",
+            "immediate-gw": "pppoe-as9829",
+            "check-gateway": "ping",
+            "distance": "3",
+            "scope": "30",
+            "target-scope": "10",
+            "dynamic": "false",
+            "inactive": "false",
+            "static": "true",
+            "comment": "AS9829 Primary"
+          },
+          {
+            "id": "*80000006",
+            "dst-address": "0.0.0.0/0",
+            "routing-table": "route-as138754",
+            "gateway": "pppoe-as9829",
+            "check-gateway": "ping",
+            "distance": "2",
+            "inactive": "false",
+            "static": "true",
+            "disabled": "true",
+            "comment": "AS9829 Failover for AS138754"
+          },
+          {
+            "id": "*80000012",
+            "dst-address": "::/0",
+            "routing-table": "v6-route-as9829",
+            "gateway": "pppoe-as9829",
+            "immediate-gw": "pppoe-as9829",
+            "distance": "3",
+            "scope": "30",
+            "target-scope": "10",
+            "dynamic": "false",
+            "inactive": "false",
+            "static": "true",
+            "comment": "AS9829 v6 Primary"
+          },
+          {
+            "id": "*80000015",
+            "dst-address": "::/0",
+            "routing-table": "v6-route-as138754",
+            "pref-src": "",
+            "gateway": "pppoe-as9829",
+            "distance": "2",
+            "scope": "30",
+            "target-scope": "10",
+            "inactive": "false",
+            "static": "true",
+            "disabled": "true",
+            "comment": "AS9829 v6 Failover for AS138754"
+          },
+          {
+            "id": "*80000005",
+            "dst-address": "0.0.0.0/0",
+            "routing-table": "route-as138754",
+            "gateway": "pppoe-as138754",
+            "immediate-gw": "pppoe-as138754",
+            "check-gateway": "ping",
+            "distance": "1",
+            "scope": "30",
+            "target-scope": "10",
+            "dynamic": "false",
+            "inactive": "false",
+            "active": "true",
+            "static": "true",
+            "comment": "AS138754 Primary"
+          },
+          {
+            "id": "*80000002",
+            "dst-address": "0.0.0.0/0",
+            "routing-table": "route-as9829",
+            "gateway": "pppoe-as138754",
+            "immediate-gw": "pppoe-as138754",
+            "check-gateway": "ping",
+            "distance": "2",
+            "scope": "30",
+            "target-scope": "10",
+            "dynamic": "false",
+            "inactive": "false",
+            "active": "true",
+            "static": "true",
+            "disabled": "false",
+            "comment": "AS138754 Failover for AS9829"
+          },
+          {
+            "id": "*80000014",
+            "dst-address": "::/0",
+            "routing-table": "v6-route-as138754",
+            "pref-src": "",
+            "gateway": "pppoe-as138754",
+            "immediate-gw": "pppoe-as138754",
+            "distance": "1",
+            "scope": "30",
+            "target-scope": "10",
+            "dynamic": "false",
+            "inactive": "false",
+            "active": "true",
+            "static": "true",
+            "disabled": "false",
+            "comment": "AS138754 v6 Primary"
+          },
+          {
+            "id": "*80000013",
+            "dst-address": "::/0",
+            "routing-table": "v6-route-as9829",
+            "pref-src": "",
+            "gateway": "pppoe-as138754",
+            "immediate-gw": "pppoe-as138754",
+            "distance": "2",
+            "scope": "30",
+            "target-scope": "10",
+            "dynamic": "false",
+            "inactive": "false",
+            "active": "true",
+            "static": "true",
+            "disabled": "false",
+            "comment": "AS138754 v6 Failover for AS9829"
+          }
+        ]
+      },
+      {
+        "event": "fault_cleared",
+        "time": 1788701387.0563378
+      },
+      {
+        "event": "recovered",
+        "time": 1788701514.323229,
+        "seconds": 127.17,
+        "trace": [
+          {
+            "ip": "117.202.191.107",
+            "colo": "MAA"
+          },
+          {
+            "ip": "2001:4490:4e6d:cc2::1",
+            "colo": "MAA"
+          }
+        ],
+        "routes": [
+          {
+            "id": "*80000001",
+            "dst-address": "0.0.0.0/0",
+            "routing-table": "route-as9829",
+            "gateway": "pppoe-as9829",
+            "immediate-gw": "pppoe-as9829",
+            "check-gateway": "ping",
+            "distance": "1",
+            "scope": "30",
+            "target-scope": "10",
+            "dynamic": "false",
+            "inactive": "false",
+            "active": "true",
+            "static": "true",
+            "comment": "AS9829 Primary"
+          },
+          {
+            "id": "*80000006",
+            "dst-address": "0.0.0.0/0",
+            "routing-table": "route-as138754",
+            "gateway": "pppoe-as9829",
+            "immediate-gw": "pppoe-as9829",
+            "check-gateway": "ping",
+            "distance": "2",
+            "scope": "30",
+            "target-scope": "10",
+            "dynamic": "false",
+            "inactive": "false",
+            "static": "true",
+            "disabled": "false",
+            "comment": "AS9829 Failover for AS138754"
+          },
+          {
+            "id": "*80000012",
+            "dst-address": "::/0",
+            "routing-table": "v6-route-as9829",
+            "gateway": "pppoe-as9829",
+            "immediate-gw": "pppoe-as9829",
+            "distance": "1",
+            "scope": "30",
+            "target-scope": "10",
+            "dynamic": "false",
+            "inactive": "false",
+            "active": "true",
+            "static": "true",
+            "comment": "AS9829 v6 Primary"
+          },
+          {
+            "id": "*80000015",
+            "dst-address": "::/0",
+            "routing-table": "v6-route-as138754",
+            "pref-src": "",
+            "gateway": "pppoe-as9829",
+            "immediate-gw": "pppoe-as9829",
+            "distance": "2",
+            "scope": "30",
+            "target-scope": "10",
+            "dynamic": "false",
+            "inactive": "false",
+            "static": "true",
+            "disabled": "false",
+            "comment": "AS9829 v6 Failover for AS138754"
+          },
+          {
+            "id": "*80000005",
+            "dst-address": "0.0.0.0/0",
+            "routing-table": "route-as138754",
+            "gateway": "pppoe-as138754",
+            "immediate-gw": "pppoe-as138754",
+            "check-gateway": "ping",
+            "distance": "1",
+            "scope": "30",
+            "target-scope": "10",
+            "dynamic": "false",
+            "inactive": "false",
+            "active": "true",
+            "static": "true",
+            "comment": "AS138754 Primary"
+          },
+          {
+            "id": "*80000002",
+            "dst-address": "0.0.0.0/0",
+            "routing-table": "route-as9829",
+            "gateway": "pppoe-as138754",
+            "immediate-gw": "pppoe-as138754",
+            "check-gateway": "ping",
+            "distance": "2",
+            "scope": "30",
+            "target-scope": "10",
+            "dynamic": "false",
+            "inactive": "false",
+            "static": "true",
+            "disabled": "false",
+            "comment": "AS138754 Failover for AS9829"
+          },
+          {
+            "id": "*80000014",
+            "dst-address": "::/0",
+            "routing-table": "v6-route-as138754",
+            "pref-src": "",
+            "gateway": "pppoe-as138754",
+            "immediate-gw": "pppoe-as138754",
+            "distance": "1",
+            "scope": "30",
+            "target-scope": "10",
+            "dynamic": "false",
+            "inactive": "false",
+            "active": "true",
+            "static": "true",
+            "disabled": "false",
+            "comment": "AS138754 v6 Primary"
+          },
+          {
+            "id": "*80000013",
+            "dst-address": "::/0",
+            "routing-table": "v6-route-as9829",
+            "pref-src": "",
+            "gateway": "pppoe-as138754",
+            "immediate-gw": "pppoe-as138754",
+            "distance": "2",
+            "scope": "30",
+            "target-scope": "10",
+            "dynamic": "false",
+            "inactive": "false",
+            "static": "true",
+            "disabled": "false",
+            "comment": "AS138754 v6 Failover for AS9829"
+          }
+        ]
+      },
+      {
+        "event": "temporary_objects_removed",
+        "time": 1788701514.3530307
+      }
+    ],
+    "passed": true,
+    "ended": 1788701514.353469
+  },
+  "resources": {
+    "pid": 3553203,
+    "seconds": 60.00089341215789,
+    "rss_kib": 20884,
+    "threads": 1,
+    "cpu_percent_one_core_including_reaped_children": 0.3666612070069972
+  },
+  "final": {
+    "time": 1788701932.0731604,
+    "routes": [
+      {
+        "id": "*80000001",
+        "dst-address": "0.0.0.0/0",
+        "routing-table": "route-as9829",
+        "gateway": "pppoe-as9829",
+        "immediate-gw": "pppoe-as9829",
+        "check-gateway": "ping",
+        "distance": "1",
+        "scope": "30",
+        "target-scope": "10",
+        "dynamic": "false",
+        "inactive": "false",
+        "active": "true",
+        "static": "true",
+        "comment": "AS9829 Primary"
+      },
+      {
+        "id": "*80000006",
+        "dst-address": "0.0.0.0/0",
+        "routing-table": "route-as138754",
+        "gateway": "pppoe-as9829",
+        "immediate-gw": "pppoe-as9829",
+        "check-gateway": "ping",
+        "distance": "2",
+        "scope": "30",
+        "target-scope": "10",
+        "dynamic": "false",
+        "inactive": "false",
+        "static": "true",
+        "disabled": "false",
+        "comment": "AS9829 Failover for AS138754"
+      },
+      {
+        "id": "*80000012",
+        "dst-address": "::/0",
+        "routing-table": "v6-route-as9829",
+        "gateway": "pppoe-as9829",
+        "immediate-gw": "pppoe-as9829",
+        "distance": "1",
+        "scope": "30",
+        "target-scope": "10",
+        "dynamic": "false",
+        "inactive": "false",
+        "active": "true",
+        "static": "true",
+        "comment": "AS9829 v6 Primary"
+      },
+      {
+        "id": "*80000015",
+        "dst-address": "::/0",
+        "routing-table": "v6-route-as138754",
+        "pref-src": "",
+        "gateway": "pppoe-as9829",
+        "immediate-gw": "pppoe-as9829",
+        "distance": "2",
+        "scope": "30",
+        "target-scope": "10",
+        "dynamic": "false",
+        "inactive": "false",
+        "static": "true",
+        "disabled": "false",
+        "comment": "AS9829 v6 Failover for AS138754"
+      },
+      {
+        "id": "*80000005",
+        "dst-address": "0.0.0.0/0",
+        "routing-table": "route-as138754",
+        "gateway": "pppoe-as138754",
+        "immediate-gw": "pppoe-as138754",
+        "check-gateway": "ping",
+        "distance": "1",
+        "scope": "30",
+        "target-scope": "10",
+        "dynamic": "false",
+        "inactive": "false",
+        "active": "true",
+        "static": "true",
+        "comment": "AS138754 Primary"
+      },
+      {
+        "id": "*80000002",
+        "dst-address": "0.0.0.0/0",
+        "routing-table": "route-as9829",
+        "gateway": "pppoe-as138754",
+        "immediate-gw": "pppoe-as138754",
+        "check-gateway": "ping",
+        "distance": "2",
+        "scope": "30",
+        "target-scope": "10",
+        "dynamic": "false",
+        "inactive": "false",
+        "static": "true",
+        "disabled": "false",
+        "comment": "AS138754 Failover for AS9829"
+      },
+      {
+        "id": "*80000014",
+        "dst-address": "::/0",
+        "routing-table": "v6-route-as138754",
+        "pref-src": "",
+        "gateway": "pppoe-as138754",
+        "immediate-gw": "pppoe-as138754",
+        "distance": "1",
+        "scope": "30",
+        "target-scope": "10",
+        "dynamic": "false",
+        "inactive": "false",
+        "active": "true",
+        "static": "true",
+        "disabled": "false",
+        "comment": "AS138754 v6 Primary"
+      },
+      {
+        "id": "*80000013",
+        "dst-address": "::/0",
+        "routing-table": "v6-route-as9829",
+        "pref-src": "",
+        "gateway": "pppoe-as138754",
+        "immediate-gw": "pppoe-as138754",
+        "distance": "2",
+        "scope": "30",
+        "target-scope": "10",
+        "dynamic": "false",
+        "inactive": "false",
+        "static": "true",
+        "disabled": "false",
+        "comment": "AS138754 v6 Failover for AS9829"
+      }
+    ],
+    "server_ipv6_rule": {
+      "id": "*1A",
+      ".nextid": "*1B",
+      "src-address": "201::/64",
+      "action": "lookup-only-in-table",
+      "table": "v6-route-as138754",
+      "inactive": "false",
+      "disabled": "false",
+      "comment": "Server v6 -> AS138754"
+    },
+    "service_running": true,
+    "enabled_at_boot": true,
+    "temporary_objects": 0,
+    "target_count": 78,
+    "sha256": {
+      "jury_monitor.py": "a08f72deac8ec7609a30365231896c3118e4acbba0c14ad3a512618c80bc88f3",
+      "targets_bsnl.csv": "ef286fc7019c7ced833961a33abb450819c78df22bb83d7d7b0d33616333cd22"
+    },
+    "tests": "................AS9829 Primary: distance=3\nAS9829 Failover for AS138754: disabled=true\nAS9829 v6 Primary: distance=3\nAS9829 v6 Failover for AS138754: disabled=true\nAS9829 Failover for AS138754: disabled=true\n...AS9829 Primary: distance=3\nAS9829 Failover for AS138754: disabled=true\nAS9829 v6 Primary: distance=3\nAS9829 v6 Failover for AS138754: disabled=true\n.....AS9829 Primary: distance=3\nAS9829 Failover for AS138754: disabled=true\nAS9829 v6 Primary: distance=3\nAS9829 v6 Failover for AS138754: disabled=true\nAS9829 Primary: distance=1\nAS9829 Failover for AS138754: disabled=false\nAS9829 v6 Primary: distance=1\nAS9829 v6 Failover for AS138754: disabled=false\nAS138754 Primary: distance=3\nAS138754 Failover for AS9829: disabled=true\nAS138754 v6 Primary: distance=3\nAS138754 v6 Failover for AS9829: disabled=true\nAS138754 Primary: distance=1\nAS138754 Failover for AS9829: disabled=false\nAS138754 v6 Primary: distance=1\nAS138754 v6 Failover for AS9829: disabled=false\n.\n----------------------------------------------------------------------\nRan 25 tests in 0.025s\n\nOK\n"
+  },
+  "production_log": [
+    "Sep  6 13:29:00 as9829 user.notice monitor-bsnl: 2026-09-06 13:29:00,005 INFO {\"time\": 1788701340.0053282, \"cycle_seconds\": 1.34, \"desired\": true, \"ipv4\": {\"score\": 0.9689655172413792, \"failing_cohorts\": 0, \"loss_pct\": 0.0, \"rtt_ms\": 28.97896551724138, \"bad\": false, \"recoverable\": true}, \"ipv6\": {\"score\": 0.9116222760290555, \"failing_cohorts\": 0, \"loss_pct\": 0.0, \"rtt_ms\": 30.74797619047619, \"bad\": false, \"recoverable\": true}}",
+    "Sep  6 13:29:03 as9829 user.notice monitor-bsnl: 2026-09-06 13:29:03,557 INFO Reloaded 78 targets",
+    "Sep  6 13:29:05 as9829 user.notice monitor-bsnl: 2026-09-06 13:29:05,030 INFO {\"time\": 1788701345.0306084, \"cycle_seconds\": 1.452, \"desired\": null, \"ipv4\": {\"score\": 0.9775374376039934, \"failing_cohorts\": 0, \"loss_pct\": 0.0, \"rtt_ms\": 33.428943089430895, \"bad\": false, \"recoverable\": true}, \"ipv6\": {\"score\": 0.9330275229357797, \"failing_cohorts\": 0, \"loss_pct\": 0.0, \"rtt_ms\": 34.527207207207205, \"bad\": false, \"recoverable\": true}}",
+    "Sep  6 13:29:40 as9829 user.notice monitor-bsnl: 2026-09-06 13:29:40,470 INFO {\"time\": 1788701380.4702382, \"cycle_seconds\": 1.901, \"desired\": null, \"ipv4\": {\"score\": 0.0, \"failing_cohorts\": 5, \"loss_pct\": 100.0, \"rtt_ms\": null, \"bad\": true, \"recoverable\": false}, \"ipv6\": {\"score\": 0.9330275229357797, \"failing_cohorts\": 0, \"loss_pct\": 0.0, \"rtt_ms\": 34.49234234234234, \"bad\": false, \"recoverable\": true}}",
+    "Sep  6 13:29:45 as9829 user.notice monitor-bsnl: 2026-09-06 13:29:45,564 WARNING AS9829 Primary: distance=3",
+    "Sep  6 13:29:45 as9829 user.notice monitor-bsnl: 2026-09-06 13:29:45,571 WARNING AS9829 Failover for AS138754: disabled=true",
+    "Sep  6 13:29:45 as9829 user.notice monitor-bsnl: 2026-09-06 13:29:45,581 WARNING AS9829 v6 Primary: distance=3",
+    "Sep  6 13:29:45 as9829 user.notice monitor-bsnl: 2026-09-06 13:29:45,586 WARNING AS9829 v6 Failover for AS138754: disabled=true",
+    "Sep  6 13:29:45 as9829 user.notice monitor-bsnl: 2026-09-06 13:29:45,620 INFO {\"time\": 1788701385.6206753, \"cycle_seconds\": 1.898, \"desired\": false, \"ipv4\": {\"score\": 0.0, \"failing_cohorts\": 5, \"loss_pct\": 100.0, \"rtt_ms\": null, \"bad\": true, \"recoverable\": false}, \"ipv6\": {\"score\": 0.9330275229357797, \"failing_cohorts\": 0, \"loss_pct\": 0.0, \"rtt_ms\": 34.47054054054054, \"bad\": false, \"recoverable\": true}}",
+    "Sep  6 13:29:50 as9829 user.notice monitor-bsnl: 2026-09-06 13:29:50,029 INFO {\"time\": 1788701390.0290875, \"cycle_seconds\": 1.449, \"desired\": false, \"ipv4\": {\"score\": 0.9775374376039934, \"failing_cohorts\": 0, \"loss_pct\": 0.0, \"rtt_ms\": 33.38170731707317, \"bad\": false, \"recoverable\": true}, \"ipv6\": {\"score\": 0.9330275229357797, \"failing_cohorts\": 0, \"loss_pct\": 0.0, \"rtt_ms\": 34.72396396396397, \"bad\": false, \"recoverable\": true}}",
+    "Sep  6 13:30:20 as9829 user.notice monitor-bsnl: 2026-09-06 13:30:20,148 INFO {\"time\": 1788701420.148766, \"cycle_seconds\": 1.451, \"desired\": false, \"ipv4\": {\"score\": 0.9775374376039934, \"failing_cohorts\": 0, \"loss_pct\": 0.0, \"rtt_ms\": 33.32658536585366, \"bad\": false, \"recoverable\": true}, \"ipv6\": {\"score\": 0.9330275229357797, \"failing_cohorts\": 0, \"loss_pct\": 0.0, \"rtt_ms\": 34.82693693693694, \"bad\": false, \"recoverable\": true}}",
+    "Sep  6 13:30:50 as9829 user.notice monitor-bsnl: 2026-09-06 13:30:50,062 INFO {\"time\": 1788701450.0627832, \"cycle_seconds\": 1.451, \"desired\": false, \"ipv4\": {\"score\": 0.9775374376039934, \"failing_cohorts\": 0, \"loss_pct\": 0.0, \"rtt_ms\": 33.295528455284554, \"bad\": false, \"recoverable\": true}, \"ipv6\": {\"score\": 0.9330275229357797, \"failing_cohorts\": 0, \"loss_pct\": 0.0, \"rtt_ms\": 34.65774774774775, \"bad\": false, \"recoverable\": true}}",
+    "Sep  6 13:31:20 as9829 user.notice monitor-bsnl: 2026-09-06 13:31:20,063 INFO {\"time\": 1788701480.063733, \"cycle_seconds\": 1.45, \"desired\": false, \"ipv4\": {\"score\": 0.9775374376039934, \"failing_cohorts\": 0, \"loss_pct\": 0.0, \"rtt_ms\": 33.60292682926829, \"bad\": false, \"recoverable\": true}, \"ipv6\": {\"score\": 0.9330275229357797, \"failing_cohorts\": 0, \"loss_pct\": 0.0, \"rtt_ms\": 34.90486486486486, \"bad\": false, \"recoverable\": true}}",
+    "Sep  6 13:31:50 as9829 user.notice monitor-bsnl: 2026-09-06 13:31:50,120 WARNING AS9829 Primary: distance=1",
+    "Sep  6 13:31:50 as9829 user.notice monitor-bsnl: 2026-09-06 13:31:50,132 WARNING AS9829 Failover for AS138754: disabled=false",
+    "Sep  6 13:31:50 as9829 user.notice monitor-bsnl: 2026-09-06 13:31:50,140 WARNING AS9829 v6 Primary: distance=1",
+    "Sep  6 13:31:50 as9829 user.notice monitor-bsnl: 2026-09-06 13:31:50,145 WARNING AS9829 v6 Failover for AS138754: disabled=false",
+    "Sep  6 13:31:50 as9829 user.notice monitor-bsnl: 2026-09-06 13:31:50,182 INFO {\"time\": 1788701510.1821833, \"cycle_seconds\": 1.449, \"desired\": true, \"ipv4\": {\"score\": 0.9775374376039934, \"failing_cohorts\": 0, \"loss_pct\": 0.0, \"rtt_ms\": 33.32878048780488, \"bad\": false, \"recoverable\": true}, \"ipv6\": {\"score\": 0.9330275229357797, \"failing_cohorts\": 0, \"loss_pct\": 0.0, \"rtt_ms\": 34.722162162162164, \"bad\": false, \"recoverable\": true}}",
+    "Sep  6 13:32:20 as9829 user.notice monitor-bsnl: 2026-09-06 13:32:20,117 INFO {\"time\": 1788701540.1175494, \"cycle_seconds\": 1.45, \"desired\": true, \"ipv4\": {\"score\": 0.9775374376039934, \"failing_cohorts\": 0, \"loss_pct\": 0.0, \"rtt_ms\": 33.44463414634146, \"bad\": false, \"recoverable\": true}, \"ipv6\": {\"score\": 0.9330275229357797, \"failing_cohorts\": 0, \"loss_pct\": 0.0, \"rtt_ms\": 34.46990990990991, \"bad\": false, \"recoverable\": true}}",
+    "Sep  6 13:32:50 as9829 user.notice monitor-bsnl: 2026-09-06 13:32:50,123 INFO {\"time\": 1788701570.1231372, \"cycle_seconds\": 1.454, \"desired\": true, \"ipv4\": {\"score\": 0.9775374376039934, \"failing_cohorts\": 0, \"loss_pct\": 0.0, \"rtt_ms\": 33.39373983739838, \"bad\": false, \"recoverable\": true}, \"ipv6\": {\"score\": 0.9201834862385321, \"failing_cohorts\": 0, \"loss_pct\": 0.9009009009009009, \"rtt_ms\": 34.524454545454546, \"bad\": false, \"recoverable\": true}}",
+    "Sep  6 13:33:25 as9829 user.notice monitor-bsnl: 2026-09-06 13:33:25,073 INFO {\"time\": 1788701605.0736794, \"cycle_seconds\": 1.451, \"desired\": true, \"ipv4\": {\"score\": 0.9658901830282862, \"failing_cohorts\": 0, \"loss_pct\": 0.0, \"rtt_ms\": 33.52715447154472, \"bad\": false, \"recoverable\": true}, \"ipv6\": {\"score\": 0.9192660550458714, \"failing_cohorts\": 0, \"loss_pct\": 0.0, \"rtt_ms\": 34.56693693693693, \"bad\": false, \"recoverable\": true}}",
+    "Sep  6 13:34:00 as9829 user.notice monitor-bsnl: 2026-09-06 13:34:00,128 INFO {\"time\": 1788701640.1289337, \"cycle_seconds\": 1.451, \"desired\": true, \"ipv4\": {\"score\": 0.9775374376039934, \"failing_cohorts\": 0, \"loss_pct\": 0.0, \"rtt_ms\": 32.90926829268293, \"bad\": false, \"recoverable\": true}, \"ipv6\": {\"score\": 0.9330275229357797, \"failing_cohorts\": 0, \"loss_pct\": 0.0, \"rtt_ms\": 34.608738738738744, \"bad\": false, \"recoverable\": true}}",
+    "Sep  6 13:34:35 as9829 user.notice monitor-bsnl: 2026-09-06 13:34:35,076 INFO {\"time\": 1788701675.0766995, \"cycle_seconds\": 1.449, \"desired\": true, \"ipv4\": {\"score\": 0.9775374376039934, \"failing_cohorts\": 0, \"loss_pct\": 0.0, \"rtt_ms\": 32.870569105691054, \"bad\": false, \"recoverable\": true}, \"ipv6\": {\"score\": 0.9330275229357797, \"failing_cohorts\": 0, \"loss_pct\": 0.0, \"rtt_ms\": 34.32198198198198, \"bad\": false, \"recoverable\": true}}",
+    "Sep  6 13:35:05 as9829 user.notice monitor-bsnl: 2026-09-06 13:35:05,078 INFO {\"time\": 1788701705.0789385, \"cycle_seconds\": 1.451, \"desired\": true, \"ipv4\": {\"score\": 0.9775374376039934, \"failing_cohorts\": 0, \"loss_pct\": 0.0, \"rtt_ms\": 32.750243902439024, \"bad\": false, \"recoverable\": true}, \"ipv6\": {\"score\": 0.9330275229357797, \"failing_cohorts\": 0, \"loss_pct\": 0.0, \"rtt_ms\": 34.50315315315315, \"bad\": false, \"recoverable\": true}}",
+    "Sep  6 13:35:35 as9829 user.notice monitor-bsnl: 2026-09-06 13:35:35,080 INFO {\"time\": 1788701735.0807996, \"cycle_seconds\": 1.453, \"desired\": true, \"ipv4\": {\"score\": 0.9775374376039934, \"failing_cohorts\": 0, \"loss_pct\": 0.0, \"rtt_ms\": 33.090813008130084, \"bad\": false, \"recoverable\": true}, \"ipv6\": {\"score\": 0.9330275229357797, \"failing_cohorts\": 0, \"loss_pct\": 0.0, \"rtt_ms\": 34.28306306306306, \"bad\": false, \"recoverable\": true}}",
+    "Sep  6 13:36:10 as9829 user.notice monitor-bsnl: 2026-09-06 13:36:10,137 INFO {\"time\": 1788701770.1377058, \"cycle_seconds\": 1.45, \"desired\": true, \"ipv4\": {\"score\": 0.9775374376039934, \"failing_cohorts\": 0, \"loss_pct\": 0.0, \"rtt_ms\": 32.864715447154474, \"bad\": false, \"recoverable\": true}, \"ipv6\": {\"score\": 0.9330275229357797, \"failing_cohorts\": 0, \"loss_pct\": 0.0, \"rtt_ms\": 34.54018018018018, \"bad\": false, \"recoverable\": true}}",
+    "Sep  6 13:36:40 as9829 user.notice monitor-bsnl: 2026-09-06 13:36:40,074 INFO {\"time\": 1788701800.0748138, \"cycle_seconds\": 1.451, \"desired\": true, \"ipv4\": {\"score\": 0.9775374376039934, \"failing_cohorts\": 0, \"loss_pct\": 0.0, \"rtt_ms\": 32.99081300813008, \"bad\": false, \"recoverable\": true}, \"ipv6\": {\"score\": 0.9330275229357797, \"failing_cohorts\": 0, \"loss_pct\": 0.0, \"rtt_ms\": 34.37747747747748, \"bad\": false, \"recoverable\": true}}",
+    "Sep  6 13:37:10 as9829 user.notice monitor-bsnl: 2026-09-06 13:37:10,144 INFO {\"time\": 1788701830.1447346, \"cycle_seconds\": 1.452, \"desired\": true, \"ipv4\": {\"score\": 0.9775374376039934, \"failing_cohorts\": 0, \"loss_pct\": 0.0, \"rtt_ms\": 33.05886178861788, \"bad\": false, \"recoverable\": true}, \"ipv6\": {\"score\": 0.9330275229357797, \"failing_cohorts\": 0, \"loss_pct\": 0.0, \"rtt_ms\": 34.32054054054054, \"bad\": false, \"recoverable\": true}}",
+    "Sep  6 13:37:40 as9829 user.notice monitor-bsnl: 2026-09-06 13:37:40,137 INFO {\"time\": 1788701860.1379, \"cycle_seconds\": 1.454, \"desired\": true, \"ipv4\": {\"score\": 0.9775374376039934, \"failing_cohorts\": 0, \"loss_pct\": 0.0, \"rtt_ms\": 33.034390243902436, \"bad\": false, \"recoverable\": true}, \"ipv6\": {\"score\": 0.9330275229357797, \"failing_cohorts\": 0, \"loss_pct\": 0.0, \"rtt_ms\": 34.365855855855855, \"bad\": false, \"recoverable\": true}}",
+    "Sep  6 13:38:15 as9829 user.notice monitor-bsnl: 2026-09-06 13:38:15,081 INFO {\"time\": 1788701895.0816083, \"cycle_seconds\": 1.453, \"desired\": true, \"ipv4\": {\"score\": 0.9775374376039934, \"failing_cohorts\": 0, \"loss_pct\": 0.0, \"rtt_ms\": 33.14211382113821, \"bad\": false, \"recoverable\": true}, \"ipv6\": {\"score\": 0.9330275229357797, \"failing_cohorts\": 0, \"loss_pct\": 0.0, \"rtt_ms\": 34.29369369369369, \"bad\": false, \"recoverable\": true}}",
+    "Sep  6 13:38:45 as9829 user.notice monitor-bsnl: 2026-09-06 13:38:45,088 INFO {\"time\": 1788701925.0881603, \"cycle_seconds\": 1.452, \"desired\": true, \"ipv4\": {\"score\": 0.9775374376039934, \"failing_cohorts\": 0, \"loss_pct\": 0.0, \"rtt_ms\": 32.860162601626016, \"bad\": false, \"recoverable\": true}, \"ipv6\": {\"score\": 0.946788990825688, \"failing_cohorts\": 0, \"loss_pct\": 0.0, \"rtt_ms\": 34.3245045045045, \"bad\": false, \"recoverable\": true}}"
+  ]
+}

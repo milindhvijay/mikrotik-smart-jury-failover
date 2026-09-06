@@ -1,0 +1,35 @@
+{
+  "isp": "bsnl",
+  "pid": 3553203,
+  "checked_utc": "2026-09-06 08:16:47",
+  "latest": {
+    "time": 1788682593.9484172,
+    "cycle_seconds": 1.342,
+    "desired": null,
+    "ipv4": {
+      "score": 0.9862068965517241,
+      "failing_cohorts": 0,
+      "loss_pct": 0.0,
+      "rtt_ms": 27.214597701149426,
+      "bad": false,
+      "recoverable": true
+    },
+    "ipv6": {
+      "score": 0.929782082324455,
+      "failing_cohorts": 0,
+      "loss_pct": 0.0,
+      "rtt_ms": 31.77892857142857,
+      "bad": false,
+      "recoverable": true
+    }
+  },
+  "logged_errors": [],
+  "cpu_percent_including_children": 0.274,
+  "cpu_sample_seconds": 387.0,
+  "memory_and_threads": [
+    "VmRSS:\t   20848 kB",
+    "Threads:\t1"
+  ],
+  "sha256": "a08f72deac8ec7609a30365231896c3118e4acbba0c14ad3a512618c80bc88f3",
+  "backup": "/root/jury-backups/20260906-080848"
+}

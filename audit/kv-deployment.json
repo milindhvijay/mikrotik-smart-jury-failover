@@ -1,0 +1,35 @@
+{
+  "isp": "kv",
+  "pid": 1479391,
+  "checked_utc": "2026-09-06 08:17:13",
+  "latest": {
+    "time": 1788682613.3429935,
+    "cycle_seconds": 1.353,
+    "desired": true,
+    "ipv4": {
+      "score": 1.0,
+      "failing_cohorts": 0,
+      "loss_pct": 0.0,
+      "rtt_ms": 24.945222222222224,
+      "bad": false,
+      "recoverable": true
+    },
+    "ipv6": {
+      "score": 1.0,
+      "failing_cohorts": 0,
+      "loss_pct": 0.0,
+      "rtt_ms": 25.436333333333334,
+      "bad": false,
+      "recoverable": true
+    }
+  },
+  "logged_errors": [],
+  "cpu_percent_including_children": 0.311,
+  "cpu_sample_seconds": 115.7,
+  "memory_and_threads": [
+    "VmRSS:\t   20936 kB",
+    "Threads:\t1"
+  ],
+  "sha256": "a08f72deac8ec7609a30365231896c3118e4acbba0c14ad3a512618c80bc88f3",
+  "backup": "/root/jury-backups/20260906-080849"
+}

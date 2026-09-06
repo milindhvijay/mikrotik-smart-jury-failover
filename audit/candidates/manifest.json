@@ -1,0 +1,368 @@
+[
+  {
+    "name": "Quad9",
+    "cohort": "anycast",
+    "source": "https://docs.quad9.net/services/",
+    "ip": "9.9.9.9"
+  },
+  {
+    "name": "Quad9",
+    "cohort": "anycast",
+    "source": "https://docs.quad9.net/services/",
+    "ip": "149.112.112.112"
+  },
+  {
+    "name": "Quad9",
+    "cohort": "anycast",
+    "source": "https://docs.quad9.net/services/",
+    "ip": "2620:fe::fe"
+  },
+  {
+    "name": "Quad9",
+    "cohort": "anycast",
+    "source": "https://docs.quad9.net/services/",
+    "ip": "2620:fe::9"
+  },
+  {
+    "name": "Cloudflare",
+    "cohort": "anycast",
+    "source": "https://developers.cloudflare.com/1.1.1.1/ip-addresses/",
+    "ip": "1.0.0.1"
+  },
+  {
+    "name": "Cloudflare",
+    "cohort": "anycast",
+    "source": "https://developers.cloudflare.com/1.1.1.1/ip-addresses/",
+    "ip": "2606:4700:4700::1001"
+  },
+  {
+    "name": "Google",
+    "cohort": "anycast",
+    "source": "https://developers.google.com/speed/public-dns/docs/using",
+    "ip": "8.8.4.4"
+  },
+  {
+    "name": "Google",
+    "cohort": "anycast",
+    "source": "https://developers.google.com/speed/public-dns/docs/using",
+    "ip": "2001:4860:4860::8844"
+  },
+  {
+    "name": "AdGuard",
+    "cohort": "anycast",
+    "source": "https://adguard-dns.io/en/public-dns.html",
+    "ip": "94.140.14.14"
+  },
+  {
+    "name": "AdGuard",
+    "cohort": "anycast",
+    "source": "https://adguard-dns.io/en/public-dns.html",
+    "ip": "94.140.15.15"
+  },
+  {
+    "name": "AdGuard",
+    "cohort": "anycast",
+    "source": "https://adguard-dns.io/en/public-dns.html",
+    "ip": "2a10:50c0::ad1:ff"
+  },
+  {
+    "name": "AdGuard",
+    "cohort": "anycast",
+    "source": "https://adguard-dns.io/en/public-dns.html",
+    "ip": "2a10:50c0::ad2:ff"
+  },
+  {
+    "name": "DNS.SB-xTom",
+    "cohort": "anycast",
+    "source": "https://dns.sb/guide/",
+    "ip": "185.222.222.222"
+  },
+  {
+    "name": "DNS.SB-xTom",
+    "cohort": "anycast",
+    "source": "https://dns.sb/guide/",
+    "ip": "45.11.45.11"
+  },
+  {
+    "name": "DNS.SB-xTom",
+    "cohort": "anycast",
+    "source": "https://dns.sb/guide/",
+    "ip": "2a09::"
+  },
+  {
+    "name": "DNS.SB-xTom",
+    "cohort": "anycast",
+    "source": "https://dns.sb/guide/",
+    "ip": "2a11::"
+  },
+  {
+    "name": "CleanBrowsing",
+    "cohort": "anycast",
+    "source": "https://cleanbrowsing.org/support/troubleshooting/command-line-dns",
+    "ip": "185.228.168.9"
+  },
+  {
+    "name": "CleanBrowsing",
+    "cohort": "anycast",
+    "source": "https://cleanbrowsing.org/support/troubleshooting/command-line-dns",
+    "ip": "185.228.169.9"
+  },
+  {
+    "name": "CleanBrowsing",
+    "cohort": "anycast",
+    "source": "https://cleanbrowsing.org/support/troubleshooting/command-line-dns",
+    "ip": "2a0d:2a00:1::2"
+  },
+  {
+    "name": "CleanBrowsing",
+    "cohort": "anycast",
+    "source": "https://cleanbrowsing.org/support/troubleshooting/command-line-dns",
+    "ip": "2a0d:2a00:2::2"
+  },
+  {
+    "name": "ControlD",
+    "cohort": "anycast",
+    "source": "https://docs.controld.com/docs/free-dns",
+    "ip": "76.76.2.0"
+  },
+  {
+    "name": "ControlD",
+    "cohort": "anycast",
+    "source": "https://docs.controld.com/docs/free-dns",
+    "ip": "76.76.10.0"
+  },
+  {
+    "name": "ControlD",
+    "cohort": "anycast",
+    "source": "https://docs.controld.com/docs/free-dns",
+    "ip": "2606:1a40::"
+  },
+  {
+    "name": "ControlD",
+    "cohort": "anycast",
+    "source": "https://docs.controld.com/docs/free-dns",
+    "ip": "2606:1a40:1::"
+  },
+  {
+    "name": "Hurricane-Electric",
+    "cohort": "anycast",
+    "source": "https://forums.he.net/index.php?topic=3996.0",
+    "ip": "74.82.42.42"
+  },
+  {
+    "name": "Hurricane-Electric",
+    "cohort": "anycast",
+    "source": "https://forums.he.net/index.php?topic=3996.0",
+    "ip": "2001:470:20::2"
+  },
+  {
+    "name": "Root-A-Verisign",
+    "cohort": "anycast",
+    "source": "https://www.iana.org/domains/root/servers",
+    "ip": "198.41.0.4"
+  },
+  {
+    "name": "Root-A-Verisign",
+    "cohort": "anycast",
+    "source": "https://www.iana.org/domains/root/servers",
+    "ip": "2001:503:ba3e::2:30"
+  },
+  {
+    "name": "Root-B-USC",
+    "cohort": "anycast",
+    "source": "https://www.iana.org/domains/root/servers",
+    "ip": "170.247.170.2"
+  },
+  {
+    "name": "Root-B-USC",
+    "cohort": "anycast",
+    "source": "https://www.iana.org/domains/root/servers",
+    "ip": "2801:1b8:10::b"
+  },
+  {
+    "name": "Root-C-Cogent",
+    "cohort": "anycast",
+    "source": "https://www.iana.org/domains/root/servers",
+    "ip": "192.33.4.12"
+  },
+  {
+    "name": "Root-C-Cogent",
+    "cohort": "anycast",
+    "source": "https://www.iana.org/domains/root/servers",
+    "ip": "2001:500:2::c"
+  },
+  {
+    "name": "Root-D-UMD",
+    "cohort": "anycast",
+    "source": "https://www.iana.org/domains/root/servers",
+    "ip": "199.7.91.13"
+  },
+  {
+    "name": "Root-D-UMD",
+    "cohort": "anycast",
+    "source": "https://www.iana.org/domains/root/servers",
+    "ip": "2001:500:2d::d"
+  },
+  {
+    "name": "Root-E-NASA",
+    "cohort": "anycast",
+    "source": "https://www.iana.org/domains/root/servers",
+    "ip": "192.203.230.10"
+  },
+  {
+    "name": "Root-E-NASA",
+    "cohort": "anycast",
+    "source": "https://www.iana.org/domains/root/servers",
+    "ip": "2001:500:a8::e"
+  },
+  {
+    "name": "Root-G-DoD",
+    "cohort": "anycast",
+    "source": "https://www.iana.org/domains/root/servers",
+    "ip": "192.112.36.4"
+  },
+  {
+    "name": "Root-G-DoD",
+    "cohort": "anycast",
+    "source": "https://www.iana.org/domains/root/servers",
+    "ip": "2001:500:12::d0d"
+  },
+  {
+    "name": "Root-H-Army",
+    "cohort": "anycast",
+    "source": "https://www.iana.org/domains/root/servers",
+    "ip": "198.97.190.53"
+  },
+  {
+    "name": "Root-H-Army",
+    "cohort": "anycast",
+    "source": "https://www.iana.org/domains/root/servers",
+    "ip": "2001:500:1::53"
+  },
+  {
+    "name": "Root-I-Netnod",
+    "cohort": "anycast",
+    "source": "https://www.iana.org/domains/root/servers",
+    "ip": "192.36.148.17"
+  },
+  {
+    "name": "Root-I-Netnod",
+    "cohort": "anycast",
+    "source": "https://www.iana.org/domains/root/servers",
+    "ip": "2001:7fe::53"
+  },
+  {
+    "name": "Root-J-Verisign",
+    "cohort": "anycast",
+    "source": "https://www.iana.org/domains/root/servers",
+    "ip": "192.58.128.30"
+  },
+  {
+    "name": "Root-J-Verisign",
+    "cohort": "anycast",
+    "source": "https://www.iana.org/domains/root/servers",
+    "ip": "2001:503:c27::2:30"
+  },
+  {
+    "name": "Root-M-WIDE",
+    "cohort": "anycast",
+    "source": "https://www.iana.org/domains/root/servers",
+    "ip": "202.12.27.33"
+  },
+  {
+    "name": "Root-M-WIDE",
+    "cohort": "anycast",
+    "source": "https://www.iana.org/domains/root/servers",
+    "ip": "2001:dc3::35"
+  },
+  {
+    "name": "Tier4-Mumbai-DC2",
+    "cohort": "regional_in",
+    "source": "https://lg-bom2.advancedserverdns.com/",
+    "ip": "188.208.141.1"
+  },
+  {
+    "name": "Caasify-Delhi-10",
+    "cohort": "regional_in",
+    "source": "https://caasify.com/cloud-vps/looking-glass",
+    "ip": "103.189.51.11"
+  },
+  {
+    "name": "Caasify-Delhi-6",
+    "cohort": "regional_in",
+    "source": "https://caasify.com/cloud-vps/looking-glass",
+    "ip": "139.84.132.104"
+  },
+  {
+    "name": "Caasify-Delhi-6",
+    "cohort": "regional_in",
+    "source": "https://caasify.com/cloud-vps/looking-glass",
+    "ip": "2401:c080:3400:290e:5400:4ff:fe9a:29a"
+  },
+  {
+    "name": "Caasify-Bangalore-5",
+    "cohort": "regional_in",
+    "source": "https://caasify.com/cloud-vps/looking-glass",
+    "ip": "139.84.138.108"
+  },
+  {
+    "name": "Caasify-Bangalore-5",
+    "cohort": "regional_in",
+    "source": "https://caasify.com/cloud-vps/looking-glass",
+    "ip": "2401:c080:3080:2846:5400:4ff:fec6:7915"
+  },
+  {
+    "name": "Caasify-Chennai-5",
+    "cohort": "regional_in",
+    "source": "https://caasify.com/cloud-vps/looking-glass",
+    "ip": "172.232.96.36"
+  },
+  {
+    "name": "Caasify-Mumbai-6",
+    "cohort": "regional_in",
+    "source": "https://caasify.com/cloud-vps/looking-glass",
+    "ip": "85.28.66.100"
+  },
+  {
+    "name": "Caasify-Mumbai-6",
+    "cohort": "regional_in",
+    "source": "https://caasify.com/cloud-vps/looking-glass",
+    "ip": "2401:c080:2600:1066:5400:3ff:fe19:3934"
+  },
+  {
+    "name": "Caasify-Singapore-1",
+    "cohort": "regional_apac",
+    "source": "https://caasify.com/cloud-vps/looking-glass",
+    "ip": "159.65.132.3"
+  },
+  {
+    "name": "Caasify-Singapore-6",
+    "cohort": "regional_apac",
+    "source": "https://caasify.com/cloud-vps/looking-glass",
+    "ip": "45.32.100.168"
+  },
+  {
+    "name": "Caasify-Singapore-6",
+    "cohort": "regional_apac",
+    "source": "https://caasify.com/cloud-vps/looking-glass",
+    "ip": "2001:19f0:4400:4001:5400:ff:fe32:b7e5"
+  },
+  {
+    "name": "Hetzner-Singapore",
+    "host": "sin-speed.hetzner.com",
+    "cohort": "regional_apac",
+    "source": "https://sin-speed.hetzner.com/"
+  },
+  {
+    "name": "Akamai-Singapore-2",
+    "host": "sg-sin-2.speedtest.linode.com",
+    "cohort": "regional_apac",
+    "source": "https://sg-sin-2.speedtest.linode.com/"
+  },
+  {
+    "name": "E2E-Noida",
+    "host": "lg.e2enetworks.net",
+    "cohort": "regional_in",
+    "source": "https://lg.e2enetworks.net/"
+  }
+]

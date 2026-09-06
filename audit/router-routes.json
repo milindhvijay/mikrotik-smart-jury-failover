@@ -1,0 +1,262 @@
+{
+  "/ip/route": [
+    {
+      "id": "*80000001",
+      "dst-address": "0.0.0.0/0",
+      "routing-table": "route-as9829",
+      "gateway": "pppoe-as9829",
+      "distance": "1",
+      "dynamic": "false",
+      "inactive": "false",
+      "active": "true",
+      "comment": "AS9829 Primary"
+    },
+    {
+      "id": "*80000002",
+      "dst-address": "0.0.0.0/0",
+      "routing-table": "route-as9829",
+      "gateway": "pppoe-as138754",
+      "distance": "2",
+      "dynamic": "false",
+      "inactive": "false",
+      "disabled": "false",
+      "comment": "AS138754 Failover for AS9829"
+    },
+    {
+      "id": "*80000003",
+      "dst-address": "0.0.0.0/0",
+      "routing-table": "route-as9829-nofailover",
+      "gateway": "pppoe-as9829",
+      "distance": "1",
+      "dynamic": "false",
+      "inactive": "false",
+      "active": "true",
+      "comment": "AS9829 Only - No Failover"
+    },
+    {
+      "id": "*80000004",
+      "dst-address": "0.0.0.0/0",
+      "routing-table": "route-as9829-nofailover",
+      "blackhole": "",
+      "distance": "254",
+      "dynamic": "false",
+      "inactive": "false",
+      "comment": "Prevent fallback to main table"
+    },
+    {
+      "id": "*80000005",
+      "dst-address": "0.0.0.0/0",
+      "routing-table": "route-as138754",
+      "gateway": "pppoe-as138754",
+      "distance": "1",
+      "dynamic": "false",
+      "inactive": "false",
+      "active": "true",
+      "comment": "AS138754 Primary"
+    },
+    {
+      "id": "*80000006",
+      "dst-address": "0.0.0.0/0",
+      "routing-table": "route-as138754",
+      "gateway": "pppoe-as9829",
+      "distance": "2",
+      "dynamic": "false",
+      "inactive": "false",
+      "disabled": "false",
+      "comment": "AS9829 Failover for AS138754"
+    },
+    {
+      "id": "*80000007",
+      "dst-address": "0.0.0.0/0",
+      "routing-table": "route-as138754-nofailover",
+      "gateway": "pppoe-as138754",
+      "distance": "1",
+      "dynamic": "false",
+      "inactive": "false",
+      "active": "true",
+      "comment": "AS138754 Only - No Failover"
+    },
+    {
+      "id": "*80000008",
+      "dst-address": "0.0.0.0/0",
+      "routing-table": "route-as138754-nofailover",
+      "blackhole": "",
+      "distance": "254",
+      "dynamic": "false",
+      "inactive": "false",
+      "comment": "Prevent fallback to main table"
+    }
+  ],
+  "/ipv6/route": [
+    {
+      "id": "*80000012",
+      "dst-address": "::/0",
+      "routing-table": "v6-route-as9829",
+      "gateway": "pppoe-as9829",
+      "distance": "1",
+      "dynamic": "false",
+      "inactive": "false",
+      "active": "true",
+      "comment": "AS9829 v6 Primary"
+    },
+    {
+      "id": "*80000013",
+      "dst-address": "::/0",
+      "routing-table": "v6-route-as9829",
+      "gateway": "pppoe-as138754",
+      "distance": "2",
+      "dynamic": "false",
+      "inactive": "false",
+      "disabled": "false",
+      "comment": "AS138754 v6 Failover for AS9829"
+    },
+    {
+      "id": "*80000096",
+      "dst-address": "::/0",
+      "routing-table": "v6-route-as9829",
+      "gateway": "fe80::3488:53ff:fe1a:9b2d%lte-as55836",
+      "distance": "4",
+      "dynamic": "false",
+      "inactive": "true",
+      "disabled": "false",
+      "comment": "5G/LTE v6 Failover for AS9829"
+    },
+    {
+      "id": "*80000016",
+      "dst-address": "::/0",
+      "routing-table": "v6-route-as9829-nofailover",
+      "gateway": "pppoe-as9829",
+      "distance": "1",
+      "dynamic": "false",
+      "inactive": "false",
+      "active": "true",
+      "comment": "AS9829 v6 Only - No Failover"
+    },
+    {
+      "id": "*80000017",
+      "dst-address": "::/0",
+      "routing-table": "v6-route-as9829-nofailover",
+      "blackhole": "",
+      "distance": "254",
+      "dynamic": "false",
+      "inactive": "false",
+      "comment": "Prevent fallback to main table"
+    },
+    {
+      "id": "*80000014",
+      "dst-address": "::/0",
+      "routing-table": "v6-route-as138754",
+      "gateway": "pppoe-as138754",
+      "distance": "1",
+      "dynamic": "false",
+      "inactive": "false",
+      "active": "true",
+      "disabled": "false",
+      "comment": "AS138754 v6 Primary"
+    },
+    {
+      "id": "*80000015",
+      "dst-address": "::/0",
+      "routing-table": "v6-route-as138754",
+      "gateway": "pppoe-as9829",
+      "distance": "2",
+      "dynamic": "false",
+      "inactive": "false",
+      "disabled": "false",
+      "comment": "AS9829 v6 Failover for AS138754"
+    },
+    {
+      "id": "*80000097",
+      "dst-address": "::/0",
+      "routing-table": "v6-route-as138754",
+      "gateway": "fe80::3488:53ff:fe1a:9b2d%lte-as55836",
+      "distance": "4",
+      "dynamic": "false",
+      "inactive": "true",
+      "disabled": "false",
+      "comment": "5G/LTE v6 Failover for AS138754"
+    },
+    {
+      "id": "*80000018",
+      "dst-address": "::/0",
+      "routing-table": "v6-route-as138754-nofailover",
+      "gateway": "pppoe-as138754",
+      "distance": "1",
+      "dynamic": "false",
+      "inactive": "false",
+      "active": "true",
+      "comment": "AS138754 v6 Only - No Failover"
+    },
+    {
+      "id": "*80000019",
+      "dst-address": "::/0",
+      "routing-table": "v6-route-as138754-nofailover",
+      "blackhole": "",
+      "distance": "254",
+      "dynamic": "false",
+      "inactive": "false",
+      "comment": "Prevent fallback to main table"
+    }
+  ],
+  "/routing/rule": [
+    {
+      "id": "*25",
+      ".nextid": "*26",
+      "src-address": "10.1.40.10/32",
+      "action": "lookup-only-in-table",
+      "table": "route-as9829-nofailover",
+      "inactive": "false",
+      "disabled": "false",
+      "comment": "Monitor-BSNL -> AS9829 Only"
+    },
+    {
+      "id": "*26",
+      ".nextid": "*2E",
+      "src-address": "10.1.40.11/32",
+      "action": "lookup-only-in-table",
+      "table": "route-as138754-nofailover",
+      "inactive": "false",
+      "comment": "Monitor-KV -> AS138754 Only"
+    },
+    {
+      "id": "*27",
+      ".nextid": "*28",
+      "src-address": "204::be24:11ff:fe06:69fa/128",
+      "action": "lookup-only-in-table",
+      "table": "v6-route-as138754-nofailover",
+      "inactive": "false",
+      "disabled": "false",
+      "comment": "Monitor-KV v6 -> AS138754 Only"
+    },
+    {
+      "id": "*28",
+      ".nextid": "*2D",
+      "src-address": "204::be24:11ff:fed7:5d96/128",
+      "action": "lookup-only-in-table",
+      "table": "v6-route-as9829-nofailover",
+      "inactive": "false",
+      "disabled": "false",
+      "comment": "Monitor-BSNL v6 -> AS9829 Only"
+    },
+    {
+      "id": "*1A",
+      ".nextid": "*1B",
+      "src-address": "201::/64",
+      "action": "lookup-only-in-table",
+      "table": "v6-route-as9829-nofailover",
+      "inactive": "false",
+      "disabled": "false",
+      "comment": "Server v6 -> AS138754"
+    },
+    {
+      "id": "*20",
+      ".nextid": "*21",
+      "src-address": "201::/64",
+      "action": "lookup-only-in-table",
+      "table": "v6-route-as133301",
+      "inactive": "true",
+      "disabled": "true",
+      "comment": "Server v6 -> AS133301"
+    }
+  ]
+}
